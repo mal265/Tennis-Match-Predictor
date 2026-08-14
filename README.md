@@ -1,46 +1,59 @@
-# Predicting ATP Tennis Match Outcomes
+# Predicting ATP Match Outcomes with Machine Learning
 
-A comparison of machine learning models for predicting the winner of professional
-men's tennis matches from information known before the match.
+Author: Roman Belchikov
 
-**TL;DR:** Seven models (from logistic regression to a neural network) all reach
-about 64-66% accuracy, barely above a simple "the favorite wins" baseline. The
-ranking gap between two players carries almost all of the predictive signal, and
-the rest is close to irreducible upset randomness.
+This project explores whether historical ATP match data can be used to predict the likely winner of a tennis match before it begins. I compared a classic favorite-wins baseline against several machine-learning models, including logistic regression, tree-based models, and a neural network, using ranking, ranking points, age, and height as the main predictors.
+
+## Project Summary
+
+The main objective was to evaluate whether a more advanced model meaningfully improves on the baseline in real-world match prediction. In tennis, the favorite is often the player with the better ranking and more stable record, so the challenge is not simply to “beat chance,” but to determine whether a model provides a meaningful edge beyond a ranking-based rule.
+
+**Key takeaway:** the best-performing models were only marginally better than the baseline and often within the same accuracy band. That strongly suggests the ranking gap contains most of the predictive signal in ATP match outcomes, while the remaining uncertainty is dominated by randomness and match-specific factors that are not available in the pre-match data.
 
 ---
 
-## 1. Question
-Can we predict who wins an ATP match using only pre-match information such as the
-players' rankings, ages, and heights? And does a more sophisticated model beat a
-simple ranking-based rule?
+## 1. Research Question
 
-## 2. Data
-- Source: Jeff Sackmann's ATP dataset (via the guillemservera Kaggle mirror).
-- Size: ~71,000 matches from 2000 to 2024, one row per match.
-- Each row lists the winner and loser with their pre-match stats (ranking, ranking
-  points, age, height, surface, round, best-of) and post-match stats (aces, etc.).
-- Cleaning: dropped matches missing a ranking or surface; filled missing heights
-  with the median. (Post-match stats are deliberately NOT used, see Method.)
+Can we predict who wins an ATP match using only pre-match information such as current ranking, ATP points, age, and height? More specifically, does a more sophisticated algorithm outperform a simple baseline that assumes the higher-ranked player wins?
 
-## 3. Method
-- **Avoiding leakage:** only pre-match information is used as input. Post-match
-  stats like aces would leak the result.
-- **Framing:** the two players are relabeled A and B at random, and the model
-  predicts whether player A wins (a balanced 50/50 target), so it must learn from
-  the features rather than the column layout.
-- **Features:** differences between the two players, `rank_diff`, `points_diff`,
-  `age_diff`, `height_diff` (plus surface and best-of in one experiment).
-- **Split:** trained on earlier matches, tested on later ones (a time-based split),
-  which mirrors real prediction.
-- **Models compared:** a favorite-wins baseline, logistic regression, decision
-  tree, random forest, gradient boosting, k-nearest neighbors, a linear SVM, and a
-  neural network. Evaluated with accuracy and cross-validation.
+---
 
-## 4. Results
+## 2. Data and Methodology
+
+The project uses a cleaned ATP dataset spanning multiple seasons and includes match-level player information such as:
+
+- ranking
+- ATP points
+- age
+- height
+- match outcome
+
+The modeling setup was designed to avoid data leakage and remain realistic in a forecasting setting. Inputs were built as differences between the two players, including:
+
+- `rank_diff`
+- `points_diff`
+- `age_diff`
+- `height_diff`
+
+The target variable was a binary outcome indicating whether Player A won the match. I evaluated several models using a time-aware split, which is more appropriate than random shuffling for predicting future tennis results.
+
+The models reviewed in this project include:
+
+- baseline favorite-wins rule
+- logistic regression
+- decision tree
+- random forest
+- gradient boosting
+- K-nearest neighbors
+- linear SVM
+- neural network
+
+---
+
+## 3. Model Comparison
 
 | Model | Accuracy |
-| --- | --- |
+| --- | ---: |
 | Baseline (favorite wins) | 0.637 |
 | Logistic regression | 0.642 |
 | Decision tree | 0.637 |
@@ -50,37 +63,84 @@ simple ranking-based rule?
 | Linear SVM | 0.642 |
 | Neural network | 0.642 |
 
+This result is informative because the performance differences are very small. The neural network and logistic regression are in the same range as the baseline, which makes it clear that the gains from more complex architectures are limited in this setting.
+
 ![Model accuracy vs baseline](charts/model_comparison.png)
 ![Favorite win rate by surface](charts/favorite_win_rate.png)
 
-Cross-validation confirmed these numbers are stable to within about a percentage point.
+---
 
-## 5. Findings
-- All seven models land within a couple of points of each other and of the baseline.
-- The ranking gap is by far the most important feature; ranking points carry the
-  same information (they agree on the favorite ~100% of the time).
-- Adding surface and match format barely changed accuracy.
-- Together this points to a real predictability ceiling: ranking explains most of
-  what is predictable, and upsets impose a hard limit no model beats.
+## 4. Findings and Takeaways
 
-## 6. Limitations
-- Uses only simple pre-match features; no recent form, head-to-head, or
-  surface-specific strength.
-- Merges 25 seasons, over which the ranking-points system changed.
-- Predicts only a binary winner; ignores injuries, retirements, and match context.
+The main conclusions from the research are as follows:
+
+- The ranking gap is by far the most informative feature.
+- Ranking points carry highly overlapping information and do not add much independent predictive value.
+- Age and height contribute only a small amount of additional signal.
+- More complex models do not offer a dramatic improvement over the simpler favorite-wins rule.
+- Upsets are frequent enough that a hard predictability ceiling exists in tennis.
+
+This means the real challenge is not merely choosing a better algorithm, but identifying the missing features that capture current form, head-to-head dynamics, surface-specific performance, fatigue, and injury conditions. Those variables are often the difference between a strong prediction and a surprise result.
+
+---
+
+## 5. Limitations
+
+This project is deliberately conservative and intentionally limited to pre-match data. The model does not use:
+
+- recent form
+- head-to-head results
+- surface-specific tendencies
+- injury information
+- scheduling or travel fatigue
+- match-context variables
+
+The dataset also merges multiple seasons, during which ranking systems and tournament structures evolved. That makes the prediction task more realistic but also imposes some constraints on model generalization.
+
+---
+
+## 6. Practical Interpretation
+
+The project shows that ATP match outcomes are not perfectly predictable from static pre-match statistics alone. Rankings explain much of what is predictable, but the randomness of tennis remains significant. That is why the model can estimate probabilities reasonably well while still failing to consistently outperform a simpler favorite-based heuristic.
+
+From a practical perspective, this suggests that the best use of the model is as a probability estimator rather than a certainty engine. It is useful for understanding who is favored, but not for assuming a match is “locked” based on rankings alone.
+
+---
 
 ## 7. How to Run
-```
+
+```bash
 pip install -r requirements.txt
 ```
-Then open `tennis_predictor.ipynb` and run all cells top to bottom.
+
+Then open `tennis_predictor.ipynb` and run the cells in order, or run the Streamlit app:
+
+```bash
+streamlit run app.py
+```
+
+---
 
 ## 8. Repository Structure
-```
+
+```text
 tennis-match-predictor/
 ├── README.md
-├── tennis_predictor.ipynb
+├── app.py
+├── train_model.py
+├── model.joblib
 ├── requirements.txt
-├── data/            # dataset (or a note on where to download it)
-└── charts/          # exported figures used above
+├── tennis_predictor.ipynb
+├── data/
+├── charts/
+└── .venv/
 ```
+
+---
+
+## 9. Final Conclusion
+
+The project confirms a central reality of tennis forecasting: rankings matter most, and the remaining unpredictability is not easily reduced with a static model. The neural network performs similarly to the simpler models, reinforcing the idea that ranking-based information dominates the signal in ATP match prediction.
+
+This is not a failure of the modeling approach; it is a reflection of the sport itself. Tennis is highly competitive, highly context-sensitive, and often governed by variance that is difficult to capture without richer live data.
+
