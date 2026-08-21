@@ -1,0 +1,775 @@
+{
+ "dataset": {
+  "matches": 71463,
+  "trainMatches": 57170,
+  "testMatches": 14293,
+  "firstYear": 2000,
+  "lastYear": 2024,
+  "players": 2096,
+  "tournaments": 1740,
+  "upsetRate": 0.3445,
+  "favoriteWinRate": 0.6555
+ },
+ "models": [
+  {
+   "key": "baseline",
+   "name": "Favourite wins",
+   "family": "heuristic",
+   "accuracy": 0.6366,
+   "lift": 0.0,
+   "auc": null,
+   "logLoss": null
+  },
+  {
+   "key": "logreg",
+   "name": "Logistic regression",
+   "family": "linear",
+   "accuracy": 0.6423,
+   "lift": 0.0057,
+   "auc": 0.7018,
+   "logLoss": 0.6313
+  },
+  {
+   "key": "tree",
+   "name": "Decision tree",
+   "family": "tree",
+   "accuracy": 0.6369,
+   "lift": 0.0003,
+   "auc": 0.6932,
+   "logLoss": 0.6359
+  },
+  {
+   "key": "forest",
+   "name": "Random forest",
+   "family": "ensemble",
+   "accuracy": 0.6414,
+   "lift": 0.0048,
+   "auc": 0.7008,
+   "logLoss": 0.6304
+  },
+  {
+   "key": "boosting",
+   "name": "Gradient boosting",
+   "family": "ensemble",
+   "accuracy": 0.6407,
+   "lift": 0.0041,
+   "auc": 0.7007,
+   "logLoss": 0.6303
+  },
+  {
+   "key": "knn",
+   "name": "K-nearest neighbours",
+   "family": "instance",
+   "accuracy": 0.6293,
+   "lift": -0.0073,
+   "auc": 0.6764,
+   "logLoss": 0.8122
+  },
+  {
+   "key": "svm",
+   "name": "Linear SVM",
+   "family": "linear",
+   "accuracy": 0.642,
+   "lift": 0.0054,
+   "auc": null,
+   "logLoss": null
+  },
+  {
+   "key": "nn",
+   "name": "Neural network",
+   "family": "network",
+   "accuracy": 0.6416,
+   "lift": 0.005,
+   "auc": 0.7018,
+   "logLoss": 0.6295
+  }
+ ],
+ "neuralNetwork": {
+  "accuracy": 0.6416,
+  "auc": 0.7018,
+  "logLoss": 0.6295,
+  "confusion": {
+   "tn": 4547,
+   "fp": 2651,
+   "fn": 2472,
+   "tp": 4623
+  },
+  "calibration": [
+   {
+    "predicted": 0.0342,
+    "actual": 0.0167,
+    "count": 60
+   },
+   {
+    "predicted": 0.0777,
+    "actual": 0.1348,
+    "count": 230
+   },
+   {
+    "predicted": 0.1255,
+    "actual": 0.1995,
+    "count": 376
+   },
+   {
+    "predicted": 0.1765,
+    "actual": 0.2153,
+    "count": 562
+   },
+   {
+    "predicted": 0.2265,
+    "actual": 0.2483,
+    "count": 741
+   },
+   {
+    "predicted": 0.2757,
+    "actual": 0.3155,
+    "count": 932
+   },
+   {
+    "predicted": 0.3246,
+    "actual": 0.3684,
+    "count": 1037
+   },
+   {
+    "predicted": 0.3745,
+    "actual": 0.4154,
+    "count": 1016
+   },
+   {
+    "predicted": 0.4257,
+    "actual": 0.4429,
+    "count": 998
+   },
+   {
+    "predicted": 0.4751,
+    "actual": 0.4873,
+    "count": 1067
+   },
+   {
+    "predicted": 0.526,
+    "actual": 0.5143,
+    "count": 1186
+   },
+   {
+    "predicted": 0.5758,
+    "actual": 0.5404,
+    "count": 1301
+   },
+   {
+    "predicted": 0.6247,
+    "actual": 0.5809,
+    "count": 1162
+   },
+   {
+    "predicted": 0.6743,
+    "actual": 0.6314,
+    "count": 974
+   },
+   {
+    "predicted": 0.7235,
+    "actual": 0.6994,
+    "count": 795
+   },
+   {
+    "predicted": 0.7748,
+    "actual": 0.7254,
+    "count": 641
+   },
+   {
+    "predicted": 0.8236,
+    "actual": 0.794,
+    "count": 534
+   },
+   {
+    "predicted": 0.8732,
+    "actual": 0.8029,
+    "count": 411
+   },
+   {
+    "predicted": 0.9212,
+    "actual": 0.8982,
+    "count": 226
+   },
+   {
+    "predicted": 0.9628,
+    "actual": 0.9545,
+    "count": 44
+   }
+  ],
+  "roc": [
+   {
+    "fpr": 0.0,
+    "tpr": 0.0
+   },
+   {
+    "fpr": 0.006,
+    "tpr": 0.0457
+   },
+   {
+    "fpr": 0.0129,
+    "tpr": 0.0703
+   },
+   {
+    "fpr": 0.0192,
+    "tpr": 0.1006
+   },
+   {
+    "fpr": 0.0261,
+    "tpr": 0.1256
+   },
+   {
+    "fpr": 0.0329,
+    "tpr": 0.1486
+   },
+   {
+    "fpr": 0.0402,
+    "tpr": 0.1697
+   },
+   {
+    "fpr": 0.0475,
+    "tpr": 0.187
+   },
+   {
+    "fpr": 0.0545,
+    "tpr": 0.2063
+   },
+   {
+    "fpr": 0.0627,
+    "tpr": 0.2238
+   },
+   {
+    "fpr": 0.0699,
+    "tpr": 0.2431
+   },
+   {
+    "fpr": 0.077,
+    "tpr": 0.2644
+   },
+   {
+    "fpr": 0.0854,
+    "tpr": 0.2791
+   },
+   {
+    "fpr": 0.0941,
+    "tpr": 0.2953
+   },
+   {
+    "fpr": 0.1024,
+    "tpr": 0.3097
+   },
+   {
+    "fpr": 0.1107,
+    "tpr": 0.3284
+   },
+   {
+    "fpr": 0.1195,
+    "tpr": 0.3416
+   },
+   {
+    "fpr": 0.1281,
+    "tpr": 0.3579
+   },
+   {
+    "fpr": 0.137,
+    "tpr": 0.3711
+   },
+   {
+    "fpr": 0.1459,
+    "tpr": 0.3835
+   },
+   {
+    "fpr": 0.155,
+    "tpr": 0.3977
+   },
+   {
+    "fpr": 0.1635,
+    "tpr": 0.411
+   },
+   {
+    "fpr": 0.1716,
+    "tpr": 0.4231
+   },
+   {
+    "fpr": 0.1819,
+    "tpr": 0.4348
+   },
+   {
+    "fpr": 0.1909,
+    "tpr": 0.4482
+   },
+   {
+    "fpr": 0.2008,
+    "tpr": 0.46
+   },
+   {
+    "fpr": 0.2114,
+    "tpr": 0.4746
+   },
+   {
+    "fpr": 0.2228,
+    "tpr": 0.4875
+   },
+   {
+    "fpr": 0.232,
+    "tpr": 0.5009
+   },
+   {
+    "fpr": 0.2426,
+    "tpr": 0.5119
+   },
+   {
+    "fpr": 0.2541,
+    "tpr": 0.523
+   },
+   {
+    "fpr": 0.2631,
+    "tpr": 0.536
+   },
+   {
+    "fpr": 0.274,
+    "tpr": 0.5455
+   },
+   {
+    "fpr": 0.2836,
+    "tpr": 0.5586
+   },
+   {
+    "fpr": 0.2927,
+    "tpr": 0.5724
+   },
+   {
+    "fpr": 0.3029,
+    "tpr": 0.586
+   },
+   {
+    "fpr": 0.3144,
+    "tpr": 0.5952
+   },
+   {
+    "fpr": 0.3252,
+    "tpr": 0.6041
+   },
+   {
+    "fpr": 0.335,
+    "tpr": 0.6166
+   },
+   {
+    "fpr": 0.3451,
+    "tpr": 0.629
+   },
+   {
+    "fpr": 0.3591,
+    "tpr": 0.6423
+   },
+   {
+    "fpr": 0.3695,
+    "tpr": 0.6529
+   },
+   {
+    "fpr": 0.3832,
+    "tpr": 0.6626
+   },
+   {
+    "fpr": 0.3932,
+    "tpr": 0.6726
+   },
+   {
+    "fpr": 0.4033,
+    "tpr": 0.6841
+   },
+   {
+    "fpr": 0.4146,
+    "tpr": 0.6956
+   },
+   {
+    "fpr": 0.4276,
+    "tpr": 0.7078
+   },
+   {
+    "fpr": 0.4391,
+    "tpr": 0.7199
+   },
+   {
+    "fpr": 0.4519,
+    "tpr": 0.7315
+   },
+   {
+    "fpr": 0.4619,
+    "tpr": 0.7412
+   },
+   {
+    "fpr": 0.4758,
+    "tpr": 0.7507
+   },
+   {
+    "fpr": 0.4869,
+    "tpr": 0.7626
+   },
+   {
+    "fpr": 0.5006,
+    "tpr": 0.7718
+   },
+   {
+    "fpr": 0.5138,
+    "tpr": 0.7821
+   },
+   {
+    "fpr": 0.5271,
+    "tpr": 0.792
+   },
+   {
+    "fpr": 0.5381,
+    "tpr": 0.7999
+   },
+   {
+    "fpr": 0.5514,
+    "tpr": 0.8097
+   },
+   {
+    "fpr": 0.5632,
+    "tpr": 0.818
+   },
+   {
+    "fpr": 0.5754,
+    "tpr": 0.8262
+   },
+   {
+    "fpr": 0.5907,
+    "tpr": 0.8364
+   },
+   {
+    "fpr": 0.6061,
+    "tpr": 0.8472
+   },
+   {
+    "fpr": 0.6213,
+    "tpr": 0.8553
+   },
+   {
+    "fpr": 0.6382,
+    "tpr": 0.8647
+   },
+   {
+    "fpr": 0.6514,
+    "tpr": 0.8751
+   },
+   {
+    "fpr": 0.6653,
+    "tpr": 0.884
+   },
+   {
+    "fpr": 0.6849,
+    "tpr": 0.8939
+   },
+   {
+    "fpr": 0.6996,
+    "tpr": 0.9032
+   },
+   {
+    "fpr": 0.7142,
+    "tpr": 0.9108
+   },
+   {
+    "fpr": 0.7313,
+    "tpr": 0.9188
+   },
+   {
+    "fpr": 0.7473,
+    "tpr": 0.9284
+   },
+   {
+    "fpr": 0.7648,
+    "tpr": 0.9366
+   },
+   {
+    "fpr": 0.7881,
+    "tpr": 0.9433
+   },
+   {
+    "fpr": 0.8073,
+    "tpr": 0.9511
+   },
+   {
+    "fpr": 0.8309,
+    "tpr": 0.9588
+   },
+   {
+    "fpr": 0.8537,
+    "tpr": 0.966
+   },
+   {
+    "fpr": 0.8783,
+    "tpr": 0.9731
+   },
+   {
+    "fpr": 0.9018,
+    "tpr": 0.9801
+   },
+   {
+    "fpr": 0.9347,
+    "tpr": 0.9868
+   },
+   {
+    "fpr": 0.9568,
+    "tpr": 0.9934
+   },
+   {
+    "fpr": 1.0,
+    "tpr": 1.0
+   }
+  ]
+ },
+ "rankGap": [
+  {
+   "label": "0\u20133",
+   "matches": 641,
+   "baseline": 0.5039,
+   "model": 0.5273
+  },
+  {
+   "label": "4\u20138",
+   "matches": 1022,
+   "baseline": 0.5577,
+   "model": 0.5646
+  },
+  {
+   "label": "9\u201315",
+   "matches": 1360,
+   "baseline": 0.5728,
+   "model": 0.5919
+  },
+  {
+   "label": "16\u201330",
+   "matches": 2656,
+   "baseline": 0.6058,
+   "model": 0.6088
+  },
+  {
+   "label": "31\u201360",
+   "matches": 3567,
+   "baseline": 0.6283,
+   "model": 0.6319
+  },
+  {
+   "label": "61\u2013120",
+   "matches": 2952,
+   "baseline": 0.6772,
+   "model": 0.6778
+  },
+  {
+   "label": "120+",
+   "matches": 2095,
+   "baseline": 0.7532,
+   "model": 0.7532
+  }
+ ],
+ "bySurface": [
+  {
+   "surface": "Hard",
+   "matches": 38922,
+   "favoriteWinRate": 0.6617,
+   "avgMinutes": 106.4,
+   "avgAces": 12.4
+  },
+  {
+   "surface": "Clay",
+   "matches": 23303,
+   "favoriteWinRate": 0.6476,
+   "avgMinutes": 107.6,
+   "avgAces": 7.5
+  },
+  {
+   "surface": "Grass",
+   "matches": 7296,
+   "favoriteWinRate": 0.6531,
+   "avgMinutes": 112.2,
+   "avgAces": 16.5
+  },
+  {
+   "surface": "Carpet",
+   "matches": 1942,
+   "favoriteWinRate": 0.637,
+   "avgMinutes": 93.5,
+   "avgAces": 10.4
+  }
+ ],
+ "byYear": [
+  {
+   "year": 2000,
+   "matches": 3248,
+   "favoriteWinRate": 0.6404
+  },
+  {
+   "year": 2001,
+   "matches": 3294,
+   "favoriteWinRate": 0.6296
+  },
+  {
+   "year": 2002,
+   "matches": 3101,
+   "favoriteWinRate": 0.6346
+  },
+  {
+   "year": 2003,
+   "matches": 3022,
+   "favoriteWinRate": 0.6479
+  },
+  {
+   "year": 2004,
+   "matches": 3195,
+   "favoriteWinRate": 0.6451
+  },
+  {
+   "year": 2005,
+   "matches": 3186,
+   "favoriteWinRate": 0.6635
+  },
+  {
+   "year": 2006,
+   "matches": 3187,
+   "favoriteWinRate": 0.6561
+  },
+  {
+   "year": 2007,
+   "matches": 3200,
+   "favoriteWinRate": 0.6562
+  },
+  {
+   "year": 2008,
+   "matches": 2957,
+   "favoriteWinRate": 0.6743
+  },
+  {
+   "year": 2009,
+   "matches": 3000,
+   "favoriteWinRate": 0.6783
+  },
+  {
+   "year": 2010,
+   "matches": 2968,
+   "favoriteWinRate": 0.6732
+  },
+  {
+   "year": 2011,
+   "matches": 2937,
+   "favoriteWinRate": 0.6793
+  },
+  {
+   "year": 2012,
+   "matches": 3001,
+   "favoriteWinRate": 0.6804
+  },
+  {
+   "year": 2013,
+   "matches": 2865,
+   "favoriteWinRate": 0.6663
+  },
+  {
+   "year": 2014,
+   "matches": 2754,
+   "favoriteWinRate": 0.6819
+  },
+  {
+   "year": 2015,
+   "matches": 2875,
+   "favoriteWinRate": 0.6821
+  },
+  {
+   "year": 2016,
+   "matches": 2882,
+   "favoriteWinRate": 0.6745
+  },
+  {
+   "year": 2017,
+   "matches": 2860,
+   "favoriteWinRate": 0.6545
+  },
+  {
+   "year": 2018,
+   "matches": 2942,
+   "favoriteWinRate": 0.64
+  },
+  {
+   "year": 2019,
+   "matches": 2680,
+   "favoriteWinRate": 0.6134
+  },
+  {
+   "year": 2020,
+   "matches": 1418,
+   "favoriteWinRate": 0.6403
+  },
+  {
+   "year": 2021,
+   "matches": 2705,
+   "favoriteWinRate": 0.6366
+  },
+  {
+   "year": 2022,
+   "matches": 2893,
+   "favoriteWinRate": 0.6478
+  },
+  {
+   "year": 2023,
+   "matches": 2904,
+   "favoriteWinRate": 0.6319
+  },
+  {
+   "year": 2024,
+   "matches": 1389,
+   "favoriteWinRate": 0.6523
+  }
+ ],
+ "byLevel": [
+  {
+   "level": "Davis Cup",
+   "matches": 5290,
+   "favoriteWinRate": 0.7236
+  },
+  {
+   "level": "Grand Slam",
+   "matches": 12159,
+   "favoriteWinRate": 0.7138
+  },
+  {
+   "level": "Masters 1000",
+   "matches": 13726,
+   "favoriteWinRate": 0.6428
+  },
+  {
+   "level": "ATP Tour",
+   "matches": 39881,
+   "favoriteWinRate": 0.6332
+  }
+ ],
+ "importance": [
+  {
+   "feature": "rank_diff",
+   "label": "Ranking gap",
+   "logregCoef": -0.5087,
+   "treeImportance": 0.0764,
+   "permutation": 0.0227
+  },
+  {
+   "feature": "points_diff",
+   "label": "ATP points gap",
+   "logregCoef": 0.7943,
+   "treeImportance": 0.9236,
+   "permutation": 0.0759
+  },
+  {
+   "feature": "age_diff",
+   "label": "Age gap",
+   "logregCoef": -0.0807,
+   "treeImportance": 0.0,
+   "permutation": 0.0064
+  },
+  {
+   "feature": "height_diff",
+   "label": "Height gap",
+   "logregCoef": 0.0909,
+   "treeImportance": 0.0,
+   "permutation": 0.0016
+  }
+ ]
+}

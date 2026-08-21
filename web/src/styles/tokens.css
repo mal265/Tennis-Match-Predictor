@@ -1,0 +1,431 @@
+/* ==========================================================================
+   CourtVision design tokens — "Night Session"
+   A floodlit hard court after dark: deep teal plane, chalk lines, ball-yellow.
+   Light mode is a day session: bleached concrete, same court, same accent.
+   ========================================================================== */
+
+:root {
+  color-scheme: dark;
+
+  /* --- planes & surfaces ------------------------------------------------ */
+  --plane: #060e0c;
+  --plane-2: #091412;
+  --surface-1: #0e1a17; /* card / chart surface — palette validated against this */
+  --surface-2: #132420;
+  --surface-3: #1a2f2a;
+  --surface-glass: rgba(19, 36, 32, 0.72);
+
+  /* --- ink -------------------------------------------------------------- */
+  --ink-1: #f3f7f0;
+  --ink-2: #b6c6bd;
+  --ink-3: #7e918a;
+  --ink-inverse: #06110e;
+
+  /* --- lines ------------------------------------------------------------ */
+  --line: rgba(243, 247, 240, 0.1);
+  --line-strong: rgba(243, 247, 240, 0.2);
+  --grid: rgba(243, 247, 240, 0.07);
+  --axis: rgba(243, 247, 240, 0.22);
+
+  /* --- the ball: signature accent --------------------------------------- */
+  --ball: #d7f24a;
+  --ball-dim: #a8bf2e;
+  --ball-glow: rgba(215, 242, 74, 0.35);
+  --on-ball: #0b1a05;
+  --ball-ink: #cbe84a; /* accent used as text on the plane */
+
+  /* --- court paint: mid-tone in both modes so the white lines always read - */
+  --court-apron: #10201b;
+  --court-floor: #1d3b32;
+  --court-line: rgba(240, 246, 238, 0.9);
+
+  /* --- categorical series (validated: dark steps on #0e1a17) ------------- */
+  --series-1: #3987e5; /* hard court  */
+  --series-2: #d95926; /* clay        */
+  --series-3: #199e70; /* grass       */
+  --series-4: #c98500; /* carpet      */
+  --series-1-soft: rgba(57, 135, 229, 0.18);
+  --series-2-soft: rgba(217, 89, 38, 0.18);
+  --series-3-soft: rgba(25, 158, 112, 0.18);
+
+  /* sequential blue ramp, light -> dark (anchor flips in light mode) */
+  --seq-1: #0d366b;
+  --seq-2: #184f95;
+  --seq-3: #256abf;
+  --seq-4: #3987e5;
+  --seq-5: #6da7ec;
+  --seq-6: #9ec5f4;
+
+  /* status — fixed, never themed, always shipped with icon + label */
+  --good: #0ca30c;
+  --warning: #fab219;
+  --critical: #d03b3b;
+
+  /* --- type ------------------------------------------------------------- */
+  --font-ui: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+
+  /* --- geometry --------------------------------------------------------- */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 22px;
+  --r-xl: 32px;
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-2: 0 18px 48px -18px rgba(0, 0, 0, 0.7);
+  --shadow-lift: 0 28px 70px -28px rgba(0, 0, 0, 0.85);
+  --ring: 0 0 0 1px var(--line);
+
+  --page: min(1240px, 100% - 3rem);
+  --prose: 68ch;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  --plane: #eef0e7;
+  --plane-2: #f5f6f0;
+  --surface-1: #fcfcfb; /* chart surface — palette validated against this */
+  --surface-2: #f4f5ef;
+  --surface-3: #e9ebe2;
+  --surface-glass: rgba(252, 252, 251, 0.82);
+
+  --ink-1: #0d1a15;
+  --ink-2: #47554e;
+  --ink-3: #75837c;
+  --ink-inverse: #fcfcfb;
+
+  --line: rgba(13, 26, 21, 0.12);
+  --line-strong: rgba(13, 26, 21, 0.24);
+  --grid: rgba(13, 26, 21, 0.08);
+  --axis: rgba(13, 26, 21, 0.25);
+
+  --ball: #cfe93f;
+  --ball-dim: #9cb52b;
+  --ball-glow: rgba(150, 180, 20, 0.3);
+  --on-ball: #16210a;
+  --ball-ink: #4c6606; /* darkened so accent text clears contrast on paper */
+
+  --court-apron: #aebdb2;
+  --court-floor: #93a99b;
+  --court-line: rgba(255, 255, 255, 0.95);
+
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --series-4: #eda100;
+  --series-1-soft: rgba(42, 120, 214, 0.16);
+  --series-2-soft: rgba(235, 104, 52, 0.16);
+  --series-3-soft: rgba(27, 175, 122, 0.16);
+
+  --seq-1: #cde2fb;
+  --seq-2: #9ec5f4;
+  --seq-3: #6da7ec;
+  --seq-4: #3987e5;
+  --seq-5: #256abf;
+  --seq-6: #0d366b;
+
+  --good: #0ca30c;
+  --warning: #fab219;
+  --critical: #d03b3b;
+
+  --shadow-1: 0 1px 2px rgba(13, 26, 21, 0.08);
+  --shadow-2: 0 18px 44px -20px rgba(13, 26, 21, 0.28);
+  --shadow-lift: 0 28px 64px -28px rgba(13, 26, 21, 0.32);
+}
+
+/* ==========================================================================
+   Reset & base
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100dvh;
+  background: var(--plane);
+  color: var(--ink-1);
+  font-family: var(--font-ui);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+:where(a) {
+  color: var(--ball-ink);
+  text-underline-offset: 3px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ball);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: var(--ball);
+  color: var(--on-ball);
+}
+
+/* ==========================================================================
+   Type primitives
+   ========================================================================== */
+
+.display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 0.94;
+  letter-spacing: -0.02em;
+}
+
+.kicker {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+/* ==========================================================================
+   Shared components
+   ========================================================================== */
+
+.page {
+  width: var(--page);
+  margin-inline: auto;
+}
+
+.card {
+  background: var(--surface-1);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-2);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  padding: 0.32em 0.8em;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+
+.pill--ball {
+  background: var(--ball);
+  border-color: transparent;
+  color: var(--on-ball);
+  font-weight: 700;
+}
+
+/* the ball button — primary action across the app */
+.btn-ball {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  padding: 0.95rem 2rem;
+  border-radius: 999px;
+  background: var(--ball);
+  color: var(--on-ball);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 0 0 0 var(--ball-glow), var(--shadow-1);
+  transition: transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease,
+    background 0.2s ease;
+}
+
+.btn-ball:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 0 0 10px var(--ball-glow), var(--shadow-2);
+}
+
+.btn-ball:active:not(:disabled) {
+  transform: translateY(0) scale(0.98);
+}
+
+.btn-ball:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  color: var(--ink-2);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.btn-ghost:hover {
+  border-color: var(--ball);
+  color: var(--ink-1);
+  background: var(--surface-2);
+}
+
+.btn-ghost[aria-pressed='true'] {
+  background: var(--ball);
+  border-color: transparent;
+  color: var(--on-ball);
+  font-weight: 600;
+}
+
+/* --- icons ---------------------------------------------------------------- */
+
+.icon {
+  width: 1.05em;
+  height: 1.05em;
+  flex: none;
+}
+
+.icon--ball-btn {
+  --ball-seam: rgba(0, 0, 0, 0.5);
+  width: 1.15em;
+  height: 1.15em;
+}
+
+/* --- country chips (regional-indicator emoji don't render on Windows) ------ */
+
+.ccode {
+  display: inline-flex;
+  align-items: center;
+  flex: none;
+  padding: 0.22em 0.42em;
+  border-radius: 5px;
+  background: var(--surface-3);
+  border: 1px solid var(--line);
+  color: var(--ink-2);
+  font-size: 0.56em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.25;
+  font-variant-numeric: tabular-nums;
+  text-transform: uppercase;
+}
+
+.ccode--lg {
+  font-size: 0.82rem;
+  padding: 0.3em 0.5em;
+  border-radius: 7px;
+}
+
+/* ==========================================================================
+   Motion — everything respects reduced motion
+   ========================================================================== */
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  60% {
+    transform: scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes ball-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes floodlight {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+.animate-in {
+  animation: fade-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* visually hidden but available to screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

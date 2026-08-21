@@ -1,0 +1,2303 @@
+[
+ {
+  "name": "Jannik Sinner",
+  "rank": 1,
+  "points": 13450,
+  "age": 23,
+  "height": 190,
+  "country": "ITA",
+  "id": "janniksinner",
+  "career": {
+   "matches": 303,
+   "wins": 222,
+   "losses": 81,
+   "winRate": 0.733,
+   "titles": 14,
+   "finals": 18,
+   "bestRank": 2,
+   "firstYear": 2019,
+   "lastYear": 2024,
+   "surfaces": {
+    "Hard": {
+     "wins": 161,
+     "losses": 50,
+     "winRate": 0.763
+    },
+    "Clay": {
+     "wins": 49,
+     "losses": 23,
+     "winRate": 0.681
+    },
+    "Grass": {
+     "wins": 12,
+     "losses": 8,
+     "winRate": 0.6
+    }
+   },
+   "bestSurface": "Hard",
+   "vsTop10": {
+    "wins": 27,
+    "losses": 28
+   },
+   "avgAces": 5.3,
+   "grandSlamWins": 45
+  },
+  "h2h": {
+   "carlosalcaraz": {
+    "wins": 4,
+    "losses": 4,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Indian Wells Masters",
+     "surface": "Hard",
+     "round": "SF",
+     "score": "1-6 6-3 6-2",
+     "won": false
+    }
+   },
+   "alexanderzverev": {
+    "wins": 1,
+    "losses": 4,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Us Open",
+     "surface": "Hard",
+     "round": "R16",
+     "score": "6-4 3-6 6-2 4-6 6-3",
+     "won": false
+    }
+   },
+   "felixaugeraliassime": {
+    "wins": 0,
+    "losses": 3,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Madrid Masters",
+     "surface": "Clay",
+     "round": "QF",
+     "score": "W/O",
+     "won": false
+    }
+   },
+   "novakdjokovic": {
+    "wins": 3,
+    "losses": 4,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Australian Open",
+     "surface": "Hard",
+     "round": "SF",
+     "score": "6-1 6-2 6-7(6) 6-3",
+     "won": true
+    }
+   },
+   "daniilmedvedev": {
+    "wins": 5,
+    "losses": 6,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Miami Masters",
+     "surface": "Hard",
+     "round": "SF",
+     "score": "6-1 6-2",
+     "won": true
+    }
+   },
+   "alexdeminaur": {
+    "wins": 7,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Rotterdam",
+     "surface": "Hard",
+     "round": "F",
+     "score": "7-5 6-4",
+     "won": true
+    }
+   },
+   "taylorfritz": {
+    "wins": 1,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Indian Wells Masters",
+     "surface": "Hard",
+     "round": "QF",
+     "score": "6-4 4-6 6-4",
+     "won": true
+    }
+   },
+   "benshelton": {
+    "wins": 2,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Indian Wells Masters",
+     "surface": "Hard",
+     "round": "R16",
+     "score": "7-6(4) 6-1",
+     "won": true
+    }
+   },
+   "alexanderbublik": {
+    "wins": 3,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Halle",
+     "surface": "Grass",
+     "round": "QF",
+     "score": "7-5 2-0 RET",
+     "won": false
+    }
+   },
+   "lorenzomusetti": {
+    "wins": 2,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Barcelona",
+     "surface": "Clay",
+     "round": "QF",
+     "score": "W/O",
+     "won": false
+    }
+   },
+   "casperruud": {
+    "wins": 2,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2021,
+     "tournament": "Vienna",
+     "surface": "Hard",
+     "round": "QF",
+     "score": "7-5 6-1",
+     "won": true
+    }
+   }
+  }
+ },
+ {
+  "name": "Carlos Alcaraz",
+  "rank": 2,
+  "points": 8160,
+  "age": 22,
+  "height": 188,
+  "country": "ESP",
+  "id": "carlosalcaraz",
+  "career": {
+   "matches": 221,
+   "wins": 173,
+   "losses": 48,
+   "winRate": 0.783,
+   "titles": 14,
+   "finals": 18,
+   "bestRank": 1,
+   "firstYear": 2020,
+   "lastYear": 2024,
+   "surfaces": {
+    "Hard": {
+     "wins": 88,
+     "losses": 29,
+     "winRate": 0.752
+    },
+    "Clay": {
+     "wins": 69,
+     "losses": 17,
+     "winRate": 0.802
+    },
+    "Grass": {
+     "wins": 16,
+     "losses": 2,
+     "winRate": 0.889
+    }
+   },
+   "bestSurface": "Grass",
+   "vsTop10": {
+    "wins": 26,
+    "losses": 17
+   },
+   "avgAces": 3.7,
+   "grandSlamWins": 45
+  },
+  "h2h": {
+   "janniksinner": {
+    "wins": 4,
+    "losses": 4,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Indian Wells Masters",
+     "surface": "Hard",
+     "round": "SF",
+     "score": "1-6 6-3 6-2",
+     "won": true
+    }
+   },
+   "alexanderzverev": {
+    "wins": 4,
+    "losses": 5,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Indian Wells Masters",
+     "surface": "Hard",
+     "round": "QF",
+     "score": "6-3 6-1",
+     "won": true
+    }
+   },
+   "felixaugeraliassime": {
+    "wins": 2,
+    "losses": 3,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Indian Wells Masters",
+     "surface": "Hard",
+     "round": "R32",
+     "score": "6-2 6-3",
+     "won": true
+    }
+   },
+   "novakdjokovic": {
+    "wins": 2,
+    "losses": 3,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Tour Finals",
+     "surface": "Hard",
+     "round": "SF",
+     "score": "6-3 6-2",
+     "won": false
+    }
+   },
+   "daniilmedvedev": {
+    "wins": 4,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Indian Wells Masters",
+     "surface": "Hard",
+     "round": "F",
+     "score": "7-6(5) 6-1",
+     "won": true
+    }
+   },
+   "alexdeminaur": {
+    "wins": 2,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Queen's Club",
+     "surface": "Grass",
+     "round": "F",
+     "score": "6-4 6-4",
+     "won": true
+    }
+   },
+   "taylorfritz": {
+    "wins": 1,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Miami Masters",
+     "surface": "Hard",
+     "round": "QF",
+     "score": "6-4 6-2",
+     "won": true
+    }
+   },
+   "flaviocobolli": {
+    "wins": 1,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Roland Garros",
+     "surface": "Clay",
+     "round": "R128",
+     "score": "6-0 6-2 7-5",
+     "won": true
+    }
+   },
+   "benshelton": {
+    "wins": 1,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Canada Masters",
+     "surface": "Hard",
+     "round": "R32",
+     "score": "6-3 7-6(3)",
+     "won": true
+    }
+   },
+   "lorenzomusetti": {
+    "wins": 3,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Miami Masters",
+     "surface": "Hard",
+     "round": "R16",
+     "score": "6-3 6-3",
+     "won": true
+    }
+   },
+   "casperruud": {
+    "wins": 4,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Beijing",
+     "surface": "Hard",
+     "round": "QF",
+     "score": "6-4 6-2",
+     "won": true
+    }
+   }
+  }
+ },
+ {
+  "name": "Alexander Zverev",
+  "rank": 3,
+  "points": 8120,
+  "age": 27,
+  "height": 198,
+  "country": "GER",
+  "id": "alexanderzverev",
+  "career": {
+   "matches": 609,
+   "wins": 422,
+   "losses": 187,
+   "winRate": 0.693,
+   "titles": 23,
+   "finals": 34,
+   "bestRank": 3,
+   "firstYear": 2013,
+   "lastYear": 2024,
+   "surfaces": {
+    "Hard": {
+     "wins": 251,
+     "losses": 117,
+     "winRate": 0.682
+    },
+    "Clay": {
+     "wins": 138,
+     "losses": 52,
+     "winRate": 0.726
+    },
+    "Grass": {
+     "wins": 33,
+     "losses": 18,
+     "winRate": 0.647
+    }
+   },
+   "bestSurface": "Clay",
+   "vsTop10": {
+    "wins": 50,
+    "losses": 64
+   },
+   "avgAces": 8.4,
+   "grandSlamWins": 88
+  },
+  "h2h": {
+   "janniksinner": {
+    "wins": 4,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Us Open",
+     "surface": "Hard",
+     "round": "R16",
+     "score": "6-4 3-6 6-2 4-6 6-3",
+     "won": true
+    }
+   },
+   "carlosalcaraz": {
+    "wins": 5,
+    "losses": 4,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Indian Wells Masters",
+     "surface": "Hard",
+     "round": "QF",
+     "score": "6-3 6-1",
+     "won": false
+    }
+   },
+   "felixaugeraliassime": {
+    "wins": 6,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Miami Masters",
+     "surface": "Hard",
+     "round": "R64",
+     "score": "6-2 6-4",
+     "won": true
+    }
+   },
+   "novakdjokovic": {
+    "wins": 4,
+    "losses": 8,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Cincinnati Masters",
+     "surface": "Hard",
+     "round": "SF",
+     "score": "7-6(5) 7-5",
+     "won": false
+    }
+   },
+   "daniilmedvedev": {
+    "wins": 7,
+    "losses": 12,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Australian Open",
+     "surface": "Hard",
+     "round": "SF",
+     "score": "5-7 3-6 7-6(4) 7-6(5) 6-3",
+     "won": false
+    }
+   },
+   "alexdeminaur": {
+    "wins": 7,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Indian Wells Masters",
+     "surface": "Hard",
+     "round": "R16",
+     "score": "5-7 6-2 6-3",
+     "won": true
+    }
+   },
+   "taylorfritz": {
+    "wins": 5,
+    "losses": 3,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Rome Masters",
+     "surface": "Clay",
+     "round": "QF",
+     "score": "6-4 6-3",
+     "won": true
+    }
+   },
+   "alexanderbublik": {
+    "wins": 1,
+    "losses": 3,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Halle",
+     "surface": "Grass",
+     "round": "SF",
+     "score": "6-3 7-5",
+     "won": false
+    }
+   },
+   "lorenzomusetti": {
+    "wins": 1,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2022,
+     "tournament": "Madrid Masters",
+     "surface": "Clay",
+     "round": "R16",
+     "score": "6-3 1-0 RET",
+     "won": true
+    }
+   },
+   "casperruud": {
+    "wins": 3,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Roland Garros",
+     "surface": "Clay",
+     "round": "SF",
+     "score": "6-3 6-4 6-0",
+     "won": false
+    }
+   }
+  }
+ },
+ {
+  "name": "Félix Auger-Aliassime",
+  "rank": 4,
+  "points": 4740,
+  "age": 24,
+  "height": 193,
+  "country": "CAN",
+  "id": "felixaugeraliassime",
+  "career": {
+   "matches": 336,
+   "wins": 201,
+   "losses": 135,
+   "winRate": 0.598,
+   "titles": 6,
+   "finals": 16,
+   "bestRank": 6,
+   "firstYear": 2018,
+   "lastYear": 2024,
+   "surfaces": {
+    "Hard": {
+     "wins": 136,
+     "losses": 88,
+     "winRate": 0.607
+    },
+    "Clay": {
+     "wins": 42,
+     "losses": 36,
+     "winRate": 0.538
+    },
+    "Grass": {
+     "wins": 23,
+     "losses": 11,
+     "winRate": 0.676
+    }
+   },
+   "bestSurface": "Grass",
+   "vsTop10": {
+    "wins": 16,
+    "losses": 38
+   },
+   "avgAces": 9.2,
+   "grandSlamWins": 30
+  },
+  "h2h": {
+   "janniksinner": {
+    "wins": 3,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Madrid Masters",
+     "surface": "Clay",
+     "round": "QF",
+     "score": "W/O",
+     "won": true
+    }
+   },
+   "carlosalcaraz": {
+    "wins": 3,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Indian Wells Masters",
+     "surface": "Hard",
+     "round": "R32",
+     "score": "6-2 6-3",
+     "won": false
+    }
+   },
+   "alexanderzverev": {
+    "wins": 2,
+    "losses": 6,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Miami Masters",
+     "surface": "Hard",
+     "round": "R64",
+     "score": "6-2 6-4",
+     "won": false
+    }
+   },
+   "novakdjokovic": {
+    "wins": 1,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2022,
+     "tournament": "Laver Cup",
+     "surface": "Hard",
+     "round": "RR",
+     "score": "6-3 7-6(3)",
+     "won": true
+    }
+   },
+   "daniilmedvedev": {
+    "wins": 0,
+    "losses": 7,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Australian Open",
+     "surface": "Hard",
+     "round": "R32",
+     "score": "6-3 6-4 6-3",
+     "won": false
+    }
+   },
+   "alexdeminaur": {
+    "wins": 2,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Rome Masters",
+     "surface": "Clay",
+     "round": "R32",
+     "score": "6-7(2) 6-4 6-4",
+     "won": false
+    }
+   },
+   "taylorfritz": {
+    "wins": 0,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2022,
+     "tournament": "Tour Finals",
+     "surface": "Hard",
+     "round": "RR",
+     "score": "7-6(4) 6-7(5) 6-2",
+     "won": false
+    }
+   },
+   "flaviocobolli": {
+    "wins": 0,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Acapulco",
+     "surface": "Hard",
+     "round": "R32",
+     "score": "2-6 6-3 6-2",
+     "won": false
+    }
+   },
+   "alexanderbublik": {
+    "wins": 2,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Montpellier",
+     "surface": "Hard",
+     "round": "SF",
+     "score": "4-6 6-4 6-4",
+     "won": false
+    }
+   },
+   "jakubmensik": {
+    "wins": 1,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Madrid Masters",
+     "surface": "Clay",
+     "round": "R32",
+     "score": "6-1 1-0 RET",
+     "won": true
+    }
+   },
+   "lorenzomusetti": {
+    "wins": 3,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2022,
+     "tournament": "Davis Cup Finals SF: ITA vs CAN",
+     "surface": "Hard",
+     "round": "RR",
+     "score": "6-3 6-4",
+     "won": true
+    }
+   },
+   "casperruud": {
+    "wins": 2,
+    "losses": 3,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Madrid Masters",
+     "surface": "Clay",
+     "round": "R16",
+     "score": "6-4 7-5",
+     "won": true
+    }
+   }
+  }
+ },
+ {
+  "name": "Novak Djokovic",
+  "rank": 5,
+  "points": 3760,
+  "age": 38,
+  "height": 188,
+  "country": "SRB",
+  "id": "novakdjokovic",
+  "career": {
+   "matches": 1332,
+   "wins": 1112,
+   "losses": 220,
+   "winRate": 0.835,
+   "titles": 99,
+   "finals": 139,
+   "bestRank": 1,
+   "firstYear": 2004,
+   "lastYear": 2024,
+   "surfaces": {
+    "Hard": {
+     "wins": 710,
+     "losses": 128,
+     "winRate": 0.847
+    },
+    "Clay": {
+     "wins": 279,
+     "losses": 69,
+     "winRate": 0.802
+    },
+    "Grass": {
+     "wins": 114,
+     "losses": 19,
+     "winRate": 0.857
+    }
+   },
+   "bestSurface": "Grass",
+   "vsTop10": {
+    "wins": 259,
+    "losses": 115
+   },
+   "avgAces": 5.7,
+   "grandSlamWins": 367
+  },
+  "h2h": {
+   "janniksinner": {
+    "wins": 4,
+    "losses": 3,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Australian Open",
+     "surface": "Hard",
+     "round": "SF",
+     "score": "6-1 6-2 6-7(6) 6-3",
+     "won": false
+    }
+   },
+   "carlosalcaraz": {
+    "wins": 3,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Tour Finals",
+     "surface": "Hard",
+     "round": "SF",
+     "score": "6-3 6-2",
+     "won": true
+    }
+   },
+   "alexanderzverev": {
+    "wins": 8,
+    "losses": 4,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Cincinnati Masters",
+     "surface": "Hard",
+     "round": "SF",
+     "score": "7-6(5) 7-5",
+     "won": true
+    }
+   },
+   "felixaugeraliassime": {
+    "wins": 1,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2022,
+     "tournament": "Laver Cup",
+     "surface": "Hard",
+     "round": "RR",
+     "score": "6-3 7-6(3)",
+     "won": false
+    }
+   },
+   "daniilmedvedev": {
+    "wins": 10,
+    "losses": 5,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Us Open",
+     "surface": "Hard",
+     "round": "F",
+     "score": "6-3 7-6(5) 6-3",
+     "won": true
+    }
+   },
+   "alexdeminaur": {
+    "wins": 2,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Monte Carlo Masters",
+     "surface": "Clay",
+     "round": "QF",
+     "score": "7-5 6-4",
+     "won": true
+    }
+   },
+   "taylorfritz": {
+    "wins": 9,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Australian Open",
+     "surface": "Hard",
+     "round": "QF",
+     "score": "7-6(3) 4-6 6-2 6-3",
+     "won": true
+    }
+   },
+   "benshelton": {
+    "wins": 1,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Us Open",
+     "surface": "Hard",
+     "round": "SF",
+     "score": "6-3 6-2 7-6(4)",
+     "won": true
+    }
+   },
+   "alexanderbublik": {
+    "wins": 1,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2021,
+     "tournament": "Davis Cup Finals QF: SRB vs KAZ",
+     "surface": "Hard",
+     "round": "RR",
+     "score": "6-3 6-4",
+     "won": true
+    }
+   },
+   "lorenzomusetti": {
+    "wins": 4,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Monte Carlo Masters",
+     "surface": "Clay",
+     "round": "R16",
+     "score": "7-5 6-3",
+     "won": true
+    }
+   },
+   "casperruud": {
+    "wins": 5,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Monte Carlo Masters",
+     "surface": "Clay",
+     "round": "SF",
+     "score": "6-4 1-6 6-4",
+     "won": false
+    }
+   }
+  }
+ },
+ {
+  "name": "Daniil Medvedev",
+  "rank": 6,
+  "points": 3620,
+  "age": 29,
+  "height": 198,
+  "country": "RUS",
+  "id": "daniilmedvedev",
+  "career": {
+   "matches": 498,
+   "wins": 356,
+   "losses": 142,
+   "winRate": 0.715,
+   "titles": 21,
+   "finals": 39,
+   "bestRank": 1,
+   "firstYear": 2016,
+   "lastYear": 2024,
+   "surfaces": {
+    "Hard": {
+     "wins": 282,
+     "losses": 93,
+     "winRate": 0.752
+    },
+    "Clay": {
+     "wins": 34,
+     "losses": 29,
+     "winRate": 0.54
+    },
+    "Grass": {
+     "wins": 40,
+     "losses": 20,
+     "winRate": 0.667
+    }
+   },
+   "bestSurface": "Hard",
+   "vsTop10": {
+    "wins": 44,
+    "losses": 44
+   },
+   "avgAces": 7.9,
+   "grandSlamWins": 75
+  },
+  "h2h": {
+   "janniksinner": {
+    "wins": 6,
+    "losses": 5,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Miami Masters",
+     "surface": "Hard",
+     "round": "SF",
+     "score": "6-1 6-2",
+     "won": false
+    }
+   },
+   "carlosalcaraz": {
+    "wins": 2,
+    "losses": 4,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Indian Wells Masters",
+     "surface": "Hard",
+     "round": "F",
+     "score": "7-6(5) 6-1",
+     "won": false
+    }
+   },
+   "alexanderzverev": {
+    "wins": 12,
+    "losses": 7,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Australian Open",
+     "surface": "Hard",
+     "round": "SF",
+     "score": "5-7 3-6 7-6(4) 7-6(5) 6-3",
+     "won": true
+    }
+   },
+   "felixaugeraliassime": {
+    "wins": 7,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Australian Open",
+     "surface": "Hard",
+     "round": "R32",
+     "score": "6-3 6-4 6-3",
+     "won": true
+    }
+   },
+   "novakdjokovic": {
+    "wins": 5,
+    "losses": 10,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Us Open",
+     "surface": "Hard",
+     "round": "F",
+     "score": "6-3 7-6(5) 6-3",
+     "won": false
+    }
+   },
+   "alexdeminaur": {
+    "wins": 6,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Beijing",
+     "surface": "Hard",
+     "round": "R16",
+     "score": "7-6(3) 6-3",
+     "won": true
+    }
+   },
+   "taylorfritz": {
+    "wins": 1,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2022,
+     "tournament": "Cincinnati Masters",
+     "surface": "Hard",
+     "round": "QF",
+     "score": "7-6(1) 6-3",
+     "won": true
+    }
+   },
+   "alexanderbublik": {
+    "wins": 6,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Madrid Masters",
+     "surface": "Clay",
+     "round": "R16",
+     "score": "7-6(3) 6-4",
+     "won": true
+    }
+   },
+   "lorenzomusetti": {
+    "wins": 2,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Cincinnati Masters",
+     "surface": "Hard",
+     "round": "R32",
+     "score": "6-3 6-2",
+     "won": true
+    }
+   },
+   "casperruud": {
+    "wins": 3,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2021,
+     "tournament": "Tour Finals",
+     "surface": "Hard",
+     "round": "SF",
+     "score": "6-4 6-2",
+     "won": true
+    }
+   }
+  }
+ },
+ {
+  "name": "Alex de Minaur",
+  "rank": 7,
+  "points": 3560,
+  "age": 25,
+  "height": 183,
+  "country": "AUS",
+  "id": "alexdeminaur",
+  "career": {
+   "matches": 375,
+   "wins": 231,
+   "losses": 144,
+   "winRate": 0.616,
+   "titles": 8,
+   "finals": 18,
+   "bestRank": 9,
+   "firstYear": 2017,
+   "lastYear": 2024,
+   "surfaces": {
+    "Hard": {
+     "wins": 180,
+     "losses": 97,
+     "winRate": 0.65
+    },
+    "Clay": {
+     "wins": 26,
+     "losses": 31,
+     "winRate": 0.456
+    },
+    "Grass": {
+     "wins": 25,
+     "losses": 16,
+     "winRate": 0.61
+    }
+   },
+   "bestSurface": "Hard",
+   "vsTop10": {
+    "wins": 18,
+    "losses": 44
+   },
+   "avgAces": 3.7,
+   "grandSlamWins": 38
+  },
+  "h2h": {
+   "janniksinner": {
+    "wins": 1,
+    "losses": 7,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Rotterdam",
+     "surface": "Hard",
+     "round": "F",
+     "score": "7-5 6-4",
+     "won": false
+    }
+   },
+   "carlosalcaraz": {
+    "wins": 0,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Queen's Club",
+     "surface": "Grass",
+     "round": "F",
+     "score": "6-4 6-4",
+     "won": false
+    }
+   },
+   "alexanderzverev": {
+    "wins": 2,
+    "losses": 7,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Indian Wells Masters",
+     "surface": "Hard",
+     "round": "R16",
+     "score": "5-7 6-2 6-3",
+     "won": false
+    }
+   },
+   "felixaugeraliassime": {
+    "wins": 1,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Rome Masters",
+     "surface": "Clay",
+     "round": "R32",
+     "score": "6-7(2) 6-4 6-4",
+     "won": true
+    }
+   },
+   "novakdjokovic": {
+    "wins": 1,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Monte Carlo Masters",
+     "surface": "Clay",
+     "round": "QF",
+     "score": "7-5 6-4",
+     "won": false
+    }
+   },
+   "daniilmedvedev": {
+    "wins": 2,
+    "losses": 6,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Beijing",
+     "surface": "Hard",
+     "round": "R16",
+     "score": "7-6(3) 6-3",
+     "won": false
+    }
+   },
+   "taylorfritz": {
+    "wins": 5,
+    "losses": 3,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "United Cup",
+     "surface": "Hard",
+     "round": "RR",
+     "score": "6-4 6-2",
+     "won": true
+    }
+   },
+   "flaviocobolli": {
+    "wins": 1,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Australian Open",
+     "surface": "Hard",
+     "round": "R32",
+     "score": "6-3 6-3 6-1",
+     "won": true
+    }
+   },
+   "alexanderbublik": {
+    "wins": 3,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Indian Wells Masters",
+     "surface": "Hard",
+     "round": "R32",
+     "score": "7-5 6-0",
+     "won": true
+    }
+   },
+   "lorenzomusetti": {
+    "wins": 1,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2022,
+     "tournament": "Australian Open",
+     "surface": "Hard",
+     "round": "R128",
+     "score": "3-6 6-3 6-0 6-3",
+     "won": true
+    }
+   },
+   "casperruud": {
+    "wins": 2,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Acapulco",
+     "surface": "Hard",
+     "round": "F",
+     "score": "6-4 6-4",
+     "won": true
+    }
+   }
+  }
+ },
+ {
+  "name": "Taylor Fritz",
+  "rank": 8,
+  "points": 3400,
+  "age": 27,
+  "height": 193,
+  "country": "USA",
+  "id": "taylorfritz",
+  "career": {
+   "matches": 430,
+   "wins": 252,
+   "losses": 178,
+   "winRate": 0.586,
+   "titles": 8,
+   "finals": 14,
+   "bestRank": 5,
+   "firstYear": 2015,
+   "lastYear": 2024,
+   "surfaces": {
+    "Hard": {
+     "wins": 183,
+     "losses": 122,
+     "winRate": 0.6
+    },
+    "Clay": {
+     "wins": 47,
+     "losses": 35,
+     "winRate": 0.573
+    },
+    "Grass": {
+     "wins": 22,
+     "losses": 21,
+     "winRate": 0.512
+    }
+   },
+   "bestSurface": "Hard",
+   "vsTop10": {
+    "wins": 21,
+    "losses": 37
+   },
+   "avgAces": 9.4,
+   "grandSlamWins": 40
+  },
+  "h2h": {
+   "janniksinner": {
+    "wins": 1,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Indian Wells Masters",
+     "surface": "Hard",
+     "round": "QF",
+     "score": "6-4 4-6 6-4",
+     "won": false
+    }
+   },
+   "carlosalcaraz": {
+    "wins": 0,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Miami Masters",
+     "surface": "Hard",
+     "round": "QF",
+     "score": "6-4 6-2",
+     "won": false
+    }
+   },
+   "alexanderzverev": {
+    "wins": 3,
+    "losses": 5,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Rome Masters",
+     "surface": "Clay",
+     "round": "QF",
+     "score": "6-4 6-3",
+     "won": false
+    }
+   },
+   "felixaugeraliassime": {
+    "wins": 2,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2022,
+     "tournament": "Tour Finals",
+     "surface": "Hard",
+     "round": "RR",
+     "score": "7-6(4) 6-7(5) 6-2",
+     "won": true
+    }
+   },
+   "novakdjokovic": {
+    "wins": 0,
+    "losses": 9,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Australian Open",
+     "surface": "Hard",
+     "round": "QF",
+     "score": "7-6(3) 4-6 6-2 6-3",
+     "won": false
+    }
+   },
+   "daniilmedvedev": {
+    "wins": 0,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2022,
+     "tournament": "Cincinnati Masters",
+     "surface": "Hard",
+     "round": "QF",
+     "score": "7-6(1) 6-3",
+     "won": false
+    }
+   },
+   "alexdeminaur": {
+    "wins": 3,
+    "losses": 5,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "United Cup",
+     "surface": "Hard",
+     "round": "RR",
+     "score": "6-4 6-2",
+     "won": false
+    }
+   },
+   "benshelton": {
+    "wins": 1,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Indian Wells Masters",
+     "surface": "Hard",
+     "round": "R64",
+     "score": "4-6 6-4 6-3",
+     "won": true
+    }
+   },
+   "alexanderbublik": {
+    "wins": 2,
+    "losses": 3,
+    "lastMeeting": {
+     "year": 2022,
+     "tournament": "Davis Cup Finals RR: USA vs KAZ",
+     "surface": "Hard",
+     "round": "RR",
+     "score": "7-6(6) 1-6 6-3",
+     "won": true
+    }
+   },
+   "jakubmensik": {
+    "wins": 1,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Us Open",
+     "surface": "Hard",
+     "round": "R32",
+     "score": "6-1 6-2 6-0",
+     "won": true
+    }
+   },
+   "lorenzomusetti": {
+    "wins": 2,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Monte Carlo Masters",
+     "surface": "Clay",
+     "round": "R64",
+     "score": "6-4 6-4",
+     "won": false
+    }
+   },
+   "casperruud": {
+    "wins": 0,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2022,
+     "tournament": "Tour Finals",
+     "surface": "Hard",
+     "round": "RR",
+     "score": "6-3 4-6 7-6(6)",
+     "won": false
+    }
+   }
+  }
+ },
+ {
+  "name": "Flavio Cobolli",
+  "rank": 9,
+  "points": 3330,
+  "age": 22,
+  "height": 185,
+  "country": "ITA",
+  "id": "flaviocobolli",
+  "career": {
+   "matches": 44,
+   "wins": 21,
+   "losses": 23,
+   "winRate": 0.477,
+   "titles": 0,
+   "finals": 0,
+   "bestRank": 56,
+   "firstYear": 2021,
+   "lastYear": 2024,
+   "surfaces": {
+    "Hard": {
+     "wins": 10,
+     "losses": 12,
+     "winRate": 0.455
+    },
+    "Clay": {
+     "wins": 11,
+     "losses": 11,
+     "winRate": 0.5
+    }
+   },
+   "bestSurface": "Clay",
+   "vsTop10": {
+    "wins": 0,
+    "losses": 3
+   },
+   "avgAces": 4.6,
+   "grandSlamWins": 2
+  },
+  "h2h": {
+   "carlosalcaraz": {
+    "wins": 0,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Roland Garros",
+     "surface": "Clay",
+     "round": "R128",
+     "score": "6-0 6-2 7-5",
+     "won": false
+    }
+   },
+   "felixaugeraliassime": {
+    "wins": 1,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Acapulco",
+     "surface": "Hard",
+     "round": "R32",
+     "score": "2-6 6-3 6-2",
+     "won": true
+    }
+   },
+   "alexdeminaur": {
+    "wins": 0,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Australian Open",
+     "surface": "Hard",
+     "round": "R32",
+     "score": "6-3 6-3 6-1",
+     "won": false
+    }
+   },
+   "benshelton": {
+    "wins": 1,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Geneva",
+     "surface": "Clay",
+     "round": "R16",
+     "score": "4-6 7-6(1) 6-2",
+     "won": true
+    }
+   },
+   "casperruud": {
+    "wins": 0,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Geneva",
+     "surface": "Clay",
+     "round": "SF",
+     "score": "1-6 6-1 7-6(4)",
+     "won": false
+    }
+   }
+  }
+ },
+ {
+  "name": "Ben Shelton",
+  "rank": 10,
+  "points": 2680,
+  "age": 22,
+  "height": 196,
+  "country": "USA",
+  "id": "benshelton",
+  "career": {
+   "matches": 82,
+   "wins": 45,
+   "losses": 37,
+   "winRate": 0.549,
+   "titles": 2,
+   "finals": 2,
+   "bestRank": 14,
+   "firstYear": 2022,
+   "lastYear": 2024,
+   "surfaces": {
+    "Hard": {
+     "wins": 35,
+     "losses": 24,
+     "winRate": 0.593
+    },
+    "Clay": {
+     "wins": 8,
+     "losses": 10,
+     "winRate": 0.444
+    },
+    "Grass": {
+     "wins": 2,
+     "losses": 3,
+     "winRate": 0.4
+    }
+   },
+   "bestSurface": "Hard",
+   "vsTop10": {
+    "wins": 3,
+    "losses": 8
+   },
+   "avgAces": 9.7,
+   "grandSlamWins": 12
+  },
+  "h2h": {
+   "janniksinner": {
+    "wins": 1,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Indian Wells Masters",
+     "surface": "Hard",
+     "round": "R16",
+     "score": "7-6(4) 6-1",
+     "won": false
+    }
+   },
+   "carlosalcaraz": {
+    "wins": 0,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Canada Masters",
+     "surface": "Hard",
+     "round": "R32",
+     "score": "6-3 7-6(3)",
+     "won": false
+    }
+   },
+   "novakdjokovic": {
+    "wins": 0,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Us Open",
+     "surface": "Hard",
+     "round": "SF",
+     "score": "6-3 6-2 7-6(4)",
+     "won": false
+    }
+   },
+   "taylorfritz": {
+    "wins": 0,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Indian Wells Masters",
+     "surface": "Hard",
+     "round": "R64",
+     "score": "4-6 6-4 6-3",
+     "won": false
+    }
+   },
+   "flaviocobolli": {
+    "wins": 0,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Geneva",
+     "surface": "Clay",
+     "round": "R16",
+     "score": "4-6 7-6(1) 6-2",
+     "won": false
+    }
+   },
+   "alexanderbublik": {
+    "wins": 0,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Madrid Masters",
+     "surface": "Clay",
+     "round": "R32",
+     "score": "3-6 7-6(2) 6-4",
+     "won": false
+    }
+   },
+   "jakubmensik": {
+    "wins": 1,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Indian Wells Masters",
+     "surface": "Hard",
+     "round": "R64",
+     "score": "4-6 6-3 6-4",
+     "won": true
+    }
+   },
+   "lorenzomusetti": {
+    "wins": 0,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Miami Masters",
+     "surface": "Hard",
+     "round": "R32",
+     "score": "6-4 7-6(5)",
+     "won": false
+    }
+   },
+   "casperruud": {
+    "wins": 1,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Acapulco",
+     "surface": "Hard",
+     "round": "QF",
+     "score": "6-7(7) 6-4 6-4",
+     "won": false
+    }
+   }
+  }
+ },
+ {
+  "name": "Alexander Bublik",
+  "rank": 11,
+  "points": 2535,
+  "age": 27,
+  "height": 190,
+  "country": "KAZ",
+  "id": "alexanderbublik",
+  "career": {
+   "matches": 281,
+   "wins": 145,
+   "losses": 136,
+   "winRate": 0.516,
+   "titles": 4,
+   "finals": 11,
+   "bestRank": 17,
+   "firstYear": 2016,
+   "lastYear": 2024,
+   "surfaces": {
+    "Hard": {
+     "wins": 96,
+     "losses": 91,
+     "winRate": 0.513
+    },
+    "Clay": {
+     "wins": 20,
+     "losses": 30,
+     "winRate": 0.4
+    },
+    "Grass": {
+     "wins": 29,
+     "losses": 15,
+     "winRate": 0.659
+    }
+   },
+   "bestSurface": "Grass",
+   "vsTop10": {
+    "wins": 9,
+    "losses": 22
+   },
+   "avgAces": 12.2,
+   "grandSlamWins": 17
+  },
+  "h2h": {
+   "janniksinner": {
+    "wins": 1,
+    "losses": 3,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Halle",
+     "surface": "Grass",
+     "round": "QF",
+     "score": "7-5 2-0 RET",
+     "won": true
+    }
+   },
+   "alexanderzverev": {
+    "wins": 3,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Halle",
+     "surface": "Grass",
+     "round": "SF",
+     "score": "6-3 7-5",
+     "won": true
+    }
+   },
+   "felixaugeraliassime": {
+    "wins": 2,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Montpellier",
+     "surface": "Hard",
+     "round": "SF",
+     "score": "4-6 6-4 6-4",
+     "won": true
+    }
+   },
+   "novakdjokovic": {
+    "wins": 0,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2021,
+     "tournament": "Davis Cup Finals QF: SRB vs KAZ",
+     "surface": "Hard",
+     "round": "RR",
+     "score": "6-3 6-4",
+     "won": false
+    }
+   },
+   "daniilmedvedev": {
+    "wins": 0,
+    "losses": 6,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Madrid Masters",
+     "surface": "Clay",
+     "round": "R16",
+     "score": "7-6(3) 6-4",
+     "won": false
+    }
+   },
+   "alexdeminaur": {
+    "wins": 0,
+    "losses": 3,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Indian Wells Masters",
+     "surface": "Hard",
+     "round": "R32",
+     "score": "7-5 6-0",
+     "won": false
+    }
+   },
+   "taylorfritz": {
+    "wins": 3,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2022,
+     "tournament": "Davis Cup Finals RR: USA vs KAZ",
+     "surface": "Hard",
+     "round": "RR",
+     "score": "7-6(6) 1-6 6-3",
+     "won": false
+    }
+   },
+   "benshelton": {
+    "wins": 2,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Madrid Masters",
+     "surface": "Clay",
+     "round": "R32",
+     "score": "3-6 7-6(2) 6-4",
+     "won": true
+    }
+   },
+   "lorenzomusetti": {
+    "wins": 2,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Adelaide",
+     "surface": "Hard",
+     "round": "QF",
+     "score": "6-3 6-7(4) 7-5",
+     "won": true
+    }
+   },
+   "casperruud": {
+    "wins": 1,
+    "losses": 6,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Basel",
+     "surface": "Hard",
+     "round": "R32",
+     "score": "7-6(5) 6-2",
+     "won": false
+    }
+   }
+  }
+ },
+ {
+  "name": "Jakub Menšík",
+  "rank": 12,
+  "points": 2380,
+  "age": 23,
+  "height": 188,
+  "country": "CZE",
+  "id": "jakubmensik",
+  "career": {
+   "matches": 20,
+   "wins": 13,
+   "losses": 7,
+   "winRate": 0.65,
+   "titles": 0,
+   "finals": 1,
+   "bestRank": 65,
+   "firstYear": 2023,
+   "lastYear": 2024,
+   "surfaces": {
+    "Hard": {
+     "wins": 11,
+     "losses": 5,
+     "winRate": 0.688
+    },
+    "Clay": {
+     "wins": 2,
+     "losses": 2,
+     "winRate": 0.5
+    }
+   },
+   "bestSurface": "Hard",
+   "vsTop10": {
+    "wins": 2,
+    "losses": 2
+   },
+   "avgAces": 9.3,
+   "grandSlamWins": 3
+  },
+  "h2h": {
+   "felixaugeraliassime": {
+    "wins": 0,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Madrid Masters",
+     "surface": "Clay",
+     "round": "R32",
+     "score": "6-1 1-0 RET",
+     "won": false
+    }
+   },
+   "taylorfritz": {
+    "wins": 0,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Us Open",
+     "surface": "Hard",
+     "round": "R32",
+     "score": "6-1 6-2 6-0",
+     "won": false
+    }
+   },
+   "benshelton": {
+    "wins": 0,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Indian Wells Masters",
+     "surface": "Hard",
+     "round": "R64",
+     "score": "4-6 6-3 6-4",
+     "won": false
+    }
+   }
+  }
+ },
+ {
+  "name": "Lorenzo Musetti",
+  "rank": 13,
+  "points": 2375,
+  "age": 22,
+  "height": 186,
+  "country": "ITA",
+  "id": "lorenzomusetti",
+  "career": {
+   "matches": 198,
+   "wins": 101,
+   "losses": 97,
+   "winRate": 0.51,
+   "titles": 2,
+   "finals": 3,
+   "bestRank": 16,
+   "firstYear": 2020,
+   "lastYear": 2024,
+   "surfaces": {
+    "Hard": {
+     "wins": 46,
+     "losses": 57,
+     "winRate": 0.447
+    },
+    "Clay": {
+     "wins": 49,
+     "losses": 33,
+     "winRate": 0.598
+    },
+    "Grass": {
+     "wins": 6,
+     "losses": 7,
+     "winRate": 0.462
+    }
+   },
+   "bestSurface": "Clay",
+   "vsTop10": {
+    "wins": 6,
+    "losses": 21
+   },
+   "avgAces": 3.4,
+   "grandSlamWins": 12
+  },
+  "h2h": {
+   "janniksinner": {
+    "wins": 1,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Barcelona",
+     "surface": "Clay",
+     "round": "QF",
+     "score": "W/O",
+     "won": true
+    }
+   },
+   "carlosalcaraz": {
+    "wins": 1,
+    "losses": 3,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Miami Masters",
+     "surface": "Hard",
+     "round": "R16",
+     "score": "6-3 6-3",
+     "won": false
+    }
+   },
+   "alexanderzverev": {
+    "wins": 0,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2022,
+     "tournament": "Madrid Masters",
+     "surface": "Clay",
+     "round": "R16",
+     "score": "6-3 1-0 RET",
+     "won": false
+    }
+   },
+   "felixaugeraliassime": {
+    "wins": 2,
+    "losses": 3,
+    "lastMeeting": {
+     "year": 2022,
+     "tournament": "Davis Cup Finals SF: ITA vs CAN",
+     "surface": "Hard",
+     "round": "RR",
+     "score": "6-3 6-4",
+     "won": false
+    }
+   },
+   "novakdjokovic": {
+    "wins": 1,
+    "losses": 4,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Monte Carlo Masters",
+     "surface": "Clay",
+     "round": "R16",
+     "score": "7-5 6-3",
+     "won": false
+    }
+   },
+   "daniilmedvedev": {
+    "wins": 0,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Cincinnati Masters",
+     "surface": "Hard",
+     "round": "R32",
+     "score": "6-3 6-2",
+     "won": false
+    }
+   },
+   "alexdeminaur": {
+    "wins": 0,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2022,
+     "tournament": "Australian Open",
+     "surface": "Hard",
+     "round": "R128",
+     "score": "3-6 6-3 6-0 6-3",
+     "won": false
+    }
+   },
+   "taylorfritz": {
+    "wins": 1,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Monte Carlo Masters",
+     "surface": "Clay",
+     "round": "R64",
+     "score": "6-4 6-4",
+     "won": true
+    }
+   },
+   "benshelton": {
+    "wins": 2,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Miami Masters",
+     "surface": "Hard",
+     "round": "R32",
+     "score": "6-4 7-6(5)",
+     "won": true
+    }
+   },
+   "alexanderbublik": {
+    "wins": 0,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Adelaide",
+     "surface": "Hard",
+     "round": "QF",
+     "score": "6-3 6-7(4) 7-5",
+     "won": false
+    }
+   },
+   "casperruud": {
+    "wins": 1,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Bastad",
+     "surface": "Clay",
+     "round": "SF",
+     "score": "6-3 7-5",
+     "won": false
+    }
+   }
+  }
+ },
+ {
+  "name": "Casper Ruud",
+  "rank": 14,
+  "points": 2345,
+  "age": 26,
+  "height": 183,
+  "country": "NOR",
+  "id": "casperruud",
+  "career": {
+   "matches": 361,
+   "wins": 237,
+   "losses": 124,
+   "winRate": 0.657,
+   "titles": 12,
+   "finals": 23,
+   "bestRank": 2,
+   "firstYear": 2016,
+   "lastYear": 2024,
+   "surfaces": {
+    "Hard": {
+     "wins": 94,
+     "losses": 69,
+     "winRate": 0.577
+    },
+    "Clay": {
+     "wins": 139,
+     "losses": 49,
+     "winRate": 0.739
+    },
+    "Grass": {
+     "wins": 4,
+     "losses": 6,
+     "winRate": 0.4
+    }
+   },
+   "bestSurface": "Clay",
+   "vsTop10": {
+    "wins": 14,
+    "losses": 27
+   },
+   "avgAces": 5.0,
+   "grandSlamWins": 38
+  },
+  "h2h": {
+   "janniksinner": {
+    "wins": 0,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2021,
+     "tournament": "Vienna",
+     "surface": "Hard",
+     "round": "QF",
+     "score": "7-5 6-1",
+     "won": false
+    }
+   },
+   "carlosalcaraz": {
+    "wins": 0,
+    "losses": 4,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Beijing",
+     "surface": "Hard",
+     "round": "QF",
+     "score": "6-4 6-2",
+     "won": false
+    }
+   },
+   "alexanderzverev": {
+    "wins": 2,
+    "losses": 3,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Roland Garros",
+     "surface": "Clay",
+     "round": "SF",
+     "score": "6-3 6-4 6-0",
+     "won": true
+    }
+   },
+   "felixaugeraliassime": {
+    "wins": 3,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Madrid Masters",
+     "surface": "Clay",
+     "round": "R16",
+     "score": "6-4 7-5",
+     "won": false
+    }
+   },
+   "novakdjokovic": {
+    "wins": 1,
+    "losses": 5,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Monte Carlo Masters",
+     "surface": "Clay",
+     "round": "SF",
+     "score": "6-4 1-6 6-4",
+     "won": true
+    }
+   },
+   "daniilmedvedev": {
+    "wins": 0,
+    "losses": 3,
+    "lastMeeting": {
+     "year": 2021,
+     "tournament": "Tour Finals",
+     "surface": "Hard",
+     "round": "SF",
+     "score": "6-4 6-2",
+     "won": false
+    }
+   },
+   "alexdeminaur": {
+    "wins": 0,
+    "losses": 2,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Acapulco",
+     "surface": "Hard",
+     "round": "F",
+     "score": "6-4 6-4",
+     "won": false
+    }
+   },
+   "taylorfritz": {
+    "wins": 1,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2022,
+     "tournament": "Tour Finals",
+     "surface": "Hard",
+     "round": "RR",
+     "score": "6-3 4-6 7-6(6)",
+     "won": true
+    }
+   },
+   "flaviocobolli": {
+    "wins": 1,
+    "losses": 0,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Geneva",
+     "surface": "Clay",
+     "round": "SF",
+     "score": "1-6 6-1 7-6(4)",
+     "won": true
+    }
+   },
+   "benshelton": {
+    "wins": 2,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2024,
+     "tournament": "Acapulco",
+     "surface": "Hard",
+     "round": "QF",
+     "score": "6-7(7) 6-4 6-4",
+     "won": true
+    }
+   },
+   "alexanderbublik": {
+    "wins": 6,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Basel",
+     "surface": "Hard",
+     "round": "R32",
+     "score": "7-6(5) 6-2",
+     "won": true
+    }
+   },
+   "lorenzomusetti": {
+    "wins": 1,
+    "losses": 1,
+    "lastMeeting": {
+     "year": 2023,
+     "tournament": "Bastad",
+     "surface": "Clay",
+     "round": "SF",
+     "score": "6-3 7-5",
+     "won": true
+    }
+   }
+  }
+ },
+ {
+  "name": "Rubén Jódar",
+  "rank": 15,
+  "points": 2243,
+  "age": 21,
+  "height": 183,
+  "country": "ESP",
+  "id": "rubenjodar",
+  "career": null,
+  "h2h": {}
+ }
+]

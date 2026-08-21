@@ -1,0 +1,444 @@
+/* ==========================================================================
+   Chart frame, marks and the table view
+   ========================================================================== */
+
+.figure {
+  margin: clamp(2rem, 4vw, 3rem) 0;
+  padding: clamp(1.1rem, 2.4vw, 1.7rem);
+  border-radius: var(--r-lg);
+  border: 1px solid var(--line);
+  background: var(--surface-1);
+  box-shadow: var(--shadow-1);
+}
+
+/* charts break out of the prose column — they need the room */
+.figure--wide {
+  margin-inline: calc(-1 * clamp(0rem, 4vw, 3rem));
+}
+
+.figure__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.figure__number {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ball-ink);
+  margin-bottom: 0.35rem;
+}
+
+.figure__title {
+  font-size: clamp(1.05rem, 2vw, 1.28rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.figure__subtitle {
+  max-width: 62ch;
+  margin-top: 0.45rem;
+  font-size: 0.87rem;
+  line-height: 1.55;
+  color: var(--ink-3);
+}
+
+.figure__toggle {
+  flex: none;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--ink-3);
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.figure__toggle:hover {
+  border-color: var(--ball);
+  color: var(--ink-1);
+}
+
+.figure__toggle[aria-pressed='true'] {
+  background: var(--surface-3);
+  color: var(--ink-1);
+}
+
+.figure__body {
+  position: relative;
+}
+
+.figure__legend {
+  margin-top: 1rem;
+}
+
+.figure__source {
+  max-width: 78ch;
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.76rem;
+  line-height: 1.55;
+  color: var(--ink-3);
+}
+
+/* --- svg marks ------------------------------------------------------------ */
+
+.chart {
+  position: relative;
+}
+
+.chart--square {
+  display: flex;
+  justify-content: center;
+}
+
+.chart svg {
+  overflow: visible;
+}
+
+.ax {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  fill: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+}
+
+.ax--name {
+  font-size: 12.5px;
+  fill: var(--ink-2);
+  font-weight: 500;
+}
+
+.ax--value {
+  font-size: 12.5px;
+  fill: var(--ink-1);
+  font-weight: 600;
+}
+
+.ax--delta {
+  fill: var(--ink-3);
+  font-weight: 500;
+  font-size: 11px;
+}
+
+.ax--ref {
+  font-size: 11px;
+  fill: var(--ball-ink);
+  font-weight: 600;
+}
+
+.ax--axis-title {
+  font-size: 10.5px;
+  fill: var(--ink-3);
+  letter-spacing: 0.03em;
+}
+
+.bar {
+  transition: width 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bar--v {
+  transition: height 0.85s cubic-bezier(0.16, 1, 0.3, 1), y 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.line {
+  transition: stroke-dashoffset 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.area {
+  transition: fill-opacity 0.9s ease 0.3s;
+}
+
+.dot {
+  transition: r 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
+}
+
+.dot:hover {
+  fill-opacity: 1;
+}
+
+/* --- tooltip -------------------------------------------------------------- */
+
+.tip {
+  position: absolute;
+  z-index: 5;
+  min-width: 150px;
+  padding: 0.6rem 0.75rem;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--line-strong);
+  background: var(--surface-2);
+  box-shadow: var(--shadow-2);
+  pointer-events: none;
+  font-size: 0.78rem;
+}
+
+.tip__title {
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  color: var(--ink-1);
+}
+
+.tip__line {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--ink-3);
+}
+
+.tip__line b {
+  margin-left: auto;
+  color: var(--ink-1);
+  font-weight: 600;
+}
+
+/* --- legend --------------------------------------------------------------- */
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.4rem;
+  list-style: none;
+  padding: 0;
+  font-size: 0.79rem;
+  color: var(--ink-3);
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+}
+
+/* --- table view (also the relief channel for low-contrast fills) ---------- */
+
+.dtable__scroll {
+  overflow-x: auto;
+}
+
+.dtable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.83rem;
+}
+
+.dtable th,
+.dtable td {
+  padding: 0.55rem 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+
+.dtable th {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 600;
+}
+
+.dtable td.num {
+  text-align: right;
+}
+
+.dtable tbody tr:hover {
+  background: var(--surface-2);
+}
+
+/* --- small multiples (importance) ----------------------------------------- */
+
+.smalls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: clamp(1rem, 2.5vw, 2rem);
+}
+
+.smalls__panel {
+  min-width: 0;
+}
+
+.smalls__title {
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.smalls__unit {
+  font-size: 0.7rem;
+  color: var(--ink-3);
+  margin-bottom: 0.85rem;
+}
+
+.smalls__row {
+  display: grid;
+  grid-template-columns: 92px 1fr 54px;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.smalls__label {
+  font-size: 0.74rem;
+  color: var(--ink-2);
+}
+
+.smalls__track {
+  height: 11px;
+  border-radius: 4px;
+  background: var(--surface-3);
+  overflow: hidden;
+}
+
+.smalls__fill {
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  background: var(--series-1);
+  transition: width 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.smalls__val {
+  font-size: 0.74rem;
+  text-align: right;
+  color: var(--ink-1);
+  font-weight: 600;
+}
+
+/* --- horizontal bars (tournament level) ----------------------------------- */
+
+.hbars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.hbars__row {
+  display: grid;
+  grid-template-columns: minmax(110px, 150px) 1fr 58px 64px;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.hbars__label {
+  font-size: 0.85rem;
+  color: var(--ink-2);
+}
+
+.hbars__track {
+  height: 16px;
+  border-radius: 4px;
+  background: var(--surface-3);
+  overflow: hidden;
+}
+
+.hbars__fill {
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  background: var(--series-1);
+  transition: width 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hbars__val {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.hbars__count {
+  font-size: 0.72rem;
+  color: var(--ink-3);
+  text-align: right;
+}
+
+/* --- confusion matrix ----------------------------------------------------- */
+
+.confusion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px; /* the 2px surface gap between adjacent fills */
+}
+
+.confusion__cell {
+  /* the sequential ramp runs pale->deep, so the ink has to flip with the theme
+     or the palest cell loses its labels */
+  --cell-ink: #ffffff;
+  --cell-ink-2: rgba(255, 255, 255, 0.88);
+  --cell-ink-3: rgba(255, 255, 255, 0.72);
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: clamp(1rem, 2.4vw, 1.5rem);
+  border-radius: 6px;
+}
+
+:root[data-theme='light'] .confusion__cell {
+  --cell-ink: #0b1c2e;
+  --cell-ink-2: rgba(11, 28, 46, 0.86);
+  --cell-ink-3: rgba(11, 28, 46, 0.68);
+}
+
+.confusion__value {
+  font-size: clamp(1.5rem, 3.6vw, 2.1rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--cell-ink);
+}
+
+.confusion__label {
+  font-size: 0.8rem;
+  color: var(--cell-ink-2);
+}
+
+.confusion__share {
+  font-size: 0.74rem;
+  color: var(--cell-ink-3);
+}
+
+.confusion__mark {
+  margin-top: 0.5rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cell-ink-3);
+}
+
+.confusion__mark.is-correct {
+  color: var(--cell-ink);
+}
+
+@media (max-width: 620px) {
+  .confusion {
+    grid-template-columns: 1fr;
+  }
+
+  .hbars__row {
+    grid-template-columns: 1fr 52px;
+    grid-template-areas: 'label val' 'track track';
+    row-gap: 0.3rem;
+  }
+
+  .hbars__label {
+    grid-area: label;
+  }
+
+  .hbars__track {
+    grid-area: track;
+  }
+
+  .hbars__val {
+    grid-area: val;
+  }
+
+  .hbars__count {
+    display: none;
+  }
+}

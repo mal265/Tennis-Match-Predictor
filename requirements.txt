@@ -1,6 +1,5 @@
-pandas
-numpy
-scikit-learn
-matplotlib
-streamlit
-joblib
+# Runtime dependencies for the deployed app.
+# The trained network is exported to JSON and runs in the browser, so serving
+# the site needs nothing but Streamlit. Training and data export need more —
+# see requirements-train.txt.
+streamlit>=1.30

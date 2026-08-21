@@ -1,0 +1,8 @@
+# Dependencies for retraining the model and regenerating the site's data.
+# Needed by train_model.py, tools/export_data.py and tennis_predictor.ipynb.
+-r requirements.txt
+pandas
+numpy
+scikit-learn
+matplotlib
+joblib

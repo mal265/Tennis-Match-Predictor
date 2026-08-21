@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+web/node_modules/
+npm-debug.log*
+
+# Tooling scratch
+.playwright-mcp/
+.DS_Store
+
+# NOTE: web/dist/ is deliberately NOT ignored.
+# Streamlit Community Cloud only installs Python dependencies — it never runs
+# `npm run build` — so the built bundle has to be committed for app.py to serve it.
