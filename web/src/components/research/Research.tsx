@@ -10,6 +10,9 @@ import {
 } from '../charts/ModelCharts'
 import { LevelChart, RankGapChart, SurfaceChart, YearChart } from '../charts/DataCharts'
 import { CalibrationChart, ResponseCurve, RocChart } from '../charts/ConfidenceCharts'
+import { ArrowIcon } from '../Icons'
+import { Callout, Fact, Method, Pullquote, Section } from './parts'
+import SeriesNav from './SeriesNav'
 
 const data = analytics as Analytics
 const nn = data.neuralNetwork
@@ -31,7 +34,7 @@ const SECTIONS = [
   { id: 'verdict', label: 'Verdict' },
 ]
 
-export default function Research() {
+export default function Research({ onOpenReport }: { onOpenReport: (report: 1 | 2) => void }) {
   const active = useActiveSection(SECTIONS.map((s) => s.id))
 
   return (
@@ -39,7 +42,7 @@ export default function Research() {
       {/* ---------------------------------------------------------------- */}
       <header className="rhero">
         <div className="page rhero__inner">
-          <p className="kicker">Research report · Roman Belchikov</p>
+          <p className="kicker">Report 1 of 2 · Roman Belchikov</p>
           <h1 className="rhero__title display">
             Rankings already know
             <br />
@@ -68,6 +71,8 @@ export default function Research() {
           </dl>
         </div>
       </header>
+
+      <SeriesNav current={1} onOpen={onOpenReport} />
 
       <div className="page research__layout">
         {/* -------------------------------------------------------------- */}
@@ -308,8 +313,8 @@ export default function Research() {
                 heard of a matchup.
               </li>
               <li>
-                <strong>Surface-specific ability.</strong> It knows the surface exists — the
-                predictor does not even get that — but not that a given player is a clay specialist.
+                <strong>Surface-specific ability.</strong> None of the four inputs mentions the
+                surface, so a clay specialist looks identical everywhere.
               </li>
               <li>
                 <strong>Fitness, injury, travel and scheduling.</strong> A retirement at 2–1 down
@@ -320,6 +325,10 @@ export default function Research() {
                 after the fact, so using them would be leakage, not prediction.
               </li>
             </ul>
+            <p>
+              Report 2 builds three of these — surface, head-to-head and rest — out of the same
+              archive, and measures exactly what each one is worth.
+            </p>
             <p>
               There is also a structural caveat: ranking systems and tournament structures changed
               over the 25 seasons in the archive. Pooling them makes the task more realistic and the
@@ -344,9 +353,14 @@ export default function Research() {
             </p>
             <p>
               Getting further requires better inputs, not better algorithms: form, head-to-head,
-              surface-specific records, fatigue. That is the next version of this project. This
-              version's contribution is knowing, with numbers attached, exactly how far four columns
+              surface-specific records, fatigue. That is precisely what Report 2 tests. This
+              report's contribution is knowing, with numbers attached, exactly how far four columns
               can carry you.
+            </p>
+            <p>
+              <button className="btn-ball" onClick={() => onOpenReport(2)}>
+                Continue to Report 2 <ArrowIcon />
+              </button>
             </p>
 
             <div className="methods">
@@ -363,7 +377,7 @@ export default function Research() {
                   Chronological 80/20 — {num(data.dataset.trainMatches)} train,{' '}
                   {num(data.dataset.testMatches)} test.
                 </Method>
-                <Method term="Shipped model">
+                <Method term="Model in this report">
                   Scikit-learn <code>MLPClassifier</code>, hidden layers{' '}
                   {architecture.hidden.join(' and ')}, ReLU, Adam, early stopping — converged in{' '}
                   {architecture.iterations} iterations behind a <code>StandardScaler</code>.
@@ -372,8 +386,8 @@ export default function Research() {
                   Accuracy, AUC and log loss on the held-out window; calibration in 5-point bins.
                 </Method>
                 <Method term="In this page">
-                  The network's weights are exported to JSON and run in your browser, so the
-                  predictor and every figure here come from the same model.
+                  The network's weights are exported to JSON and run in your browser, so Fig. 3
+                  is drawn by the model itself. The live predictor now runs Report 2's model.
                 </Method>
               </dl>
             </div>
@@ -381,69 +395,5 @@ export default function Research() {
         </div>
       </div>
     </article>
-  )
-}
-
-/* --- small building blocks ------------------------------------------------ */
-
-function Section({
-  id,
-  eyebrow,
-  title,
-  children,
-}: {
-  id: string
-  eyebrow: string
-  title: string
-  children: React.ReactNode
-}) {
-  return (
-    <section className="rsection" id={id}>
-      <header className="rsection__head">
-        <span className="rsection__eyebrow num">{eyebrow}</span>
-        <h2 className="rsection__title display">{title}</h2>
-      </header>
-      {children}
-    </section>
-  )
-}
-
-function Pullquote({ children }: { children: React.ReactNode }) {
-  return <blockquote className="pullquote display">{children}</blockquote>
-}
-
-function Callout({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <aside className="callout">
-      <p className="callout__title">{title}</p>
-      <p>{children}</p>
-    </aside>
-  )
-}
-
-function Fact({
-  term,
-  detail,
-  children,
-}: {
-  term: string
-  detail: string
-  children: React.ReactNode
-}) {
-  return (
-    <div className="fact">
-      <dt className="fact__term">{term}</dt>
-      <dd className="fact__val num">{children}</dd>
-      <dd className="fact__detail">{detail}</dd>
-    </div>
-  )
-}
-
-function Method({ term, children }: { term: string; children: React.ReactNode }) {
-  return (
-    <div className="methods__item">
-      <dt>{term}</dt>
-      <dd>{children}</dd>
-    </div>
   )
 }

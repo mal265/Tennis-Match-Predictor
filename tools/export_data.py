@@ -4,10 +4,12 @@ Everything the frontend shows is produced here, straight from `model.joblib` and
 `data/atp_2000_2024_model_ready.csv`, so no chart or number in the UI is hand-typed.
 
 Outputs (written to web/src/data/):
-  model.json      - StandardScaler + MLP weights, for inference in the browser
-  analytics.json  - model comparison, surface / rank-gap / yearly splits, calibration, ROC
+  model.json      - Report 1: StandardScaler + MLP weights, run in the browser
+  analytics.json  - Report 1: model comparison, surface / rank-gap / yearly splits
+  model_v2.json   - Report 2: the final logistic regression the predictor runs
+  report2.json    - Report 2: the feature ladder, significance tests, Elo ratings
   players.json    - the ATP snapshot used by the predictor, enriched with career
-                    records and head-to-head results mined from the dataset
+                    records, head-to-head results and current Elo ratings
 """
 
 from __future__ import annotations
@@ -29,6 +31,8 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import LinearSVC
 from sklearn.tree import DecisionTreeClassifier
+
+import report2
 
 warnings.filterwarnings("ignore")
 
@@ -360,19 +364,33 @@ def export_players(df: pd.DataFrame) -> list[dict]:
     return players
 
 
+def write_json(name: str, payload, indent: int | None = None) -> None:
+    (OUT_DIR / name).write_text(
+        json.dumps(payload, indent=indent, ensure_ascii=False), encoding="utf-8", newline="\n"
+    )
+
+
 def main() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     df = pd.read_csv(DATA_PATH, parse_dates=["tourney_date"])
     print(f"Loaded {len(df):,} matches")
 
-    print("Exporting model weights...")
-    (OUT_DIR / "model.json").write_text(json.dumps(export_model()), encoding="utf-8")
+    print("Report 1: exporting the neural network...")
+    write_json("model.json", export_model())
 
-    print("Computing analytics (training 7 models)...")
-    (OUT_DIR / "analytics.json").write_text(json.dumps(export_analytics(df), indent=1), encoding="utf-8")
+    print("Report 1: computing analytics (training 7 models)...")
+    analytics = export_analytics(df)
+    write_json("analytics.json", analytics, indent=1)
+
+    print("Report 2: building Elo features and fitting the ladder...")
+    report, model_v2, ratings, matches = report2.build(DATA_PATH, analytics)
+    write_json("report2.json", report, indent=1)
+    write_json("model_v2.json", model_v2)
 
     print("Building player cards...")
-    (OUT_DIR / "players.json").write_text(json.dumps(export_players(df), indent=1, ensure_ascii=False), encoding="utf-8")
+    players = export_players(df)
+    report2.attach_ratings(players, ratings, matches, key=slug)
+    write_json("players.json", players, indent=1)
 
     for f in sorted(OUT_DIR.glob("*.json")):
         print(f"  {f.name:<16} {f.stat().st_size / 1024:>7.1f} KB")

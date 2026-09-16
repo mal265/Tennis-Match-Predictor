@@ -112,7 +112,7 @@ main,
   position: absolute;
   top: 4px;
   left: 4px;
-  width: calc(50% - 4px);
+  width: calc((100% - 8px) / var(--tabs, 2));
   height: calc(100% - 8px);
   border-radius: 999px;
   background: var(--ball);
@@ -287,5 +287,12 @@ main,
 @media (max-width: 760px) {
   .site-footer__inner {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav__tab {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.76rem;
   }
 }

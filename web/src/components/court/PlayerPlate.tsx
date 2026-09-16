@@ -1,16 +1,20 @@
 import { num } from '../../lib/format'
+import type { Player, RatedSurface } from '../../lib/types'
 import { BallIcon, CountryChip } from '../Icons'
-import type { Player } from '../../lib/types'
 
 interface Props {
   player: Player
   side: 'a' | 'b'
+  surface: RatedSurface
   probability: number | null
   isWinner: boolean
   onPick: () => void
 }
 
-export default function PlayerPlate({ player, side, probability, isWinner, onPick }: Props) {
+export default function PlayerPlate({ player, side, surface, probability, isWinner, onPick }: Props) {
+  const { rating } = player
+  const onSurface = rating.surfaces[surface]
+
   return (
     <button
       className={`plate plate--${side} ${isWinner ? 'plate--winner' : ''}`}
@@ -34,22 +38,27 @@ export default function PlayerPlate({ player, side, probability, isWinner, onPic
       </span>
 
       <span className="plate__stats">
-        <span>
-          <b className="num">{num(player.points)}</b> pts
-        </span>
-        <span>
-          <b className="num">{player.age}</b> yrs
-        </span>
-        <span>
-          <b className="num">{player.height}</b> cm
-        </span>
-        {player.career && (
-          <span>
-            <b className="num">
-              {player.career.wins}–{player.career.losses}
-            </b>{' '}
-            career
-          </span>
+        {rating.rated ? (
+          <>
+            <span>
+              <b className="num">{Math.round(rating.elo)}</b> Elo
+            </span>
+            <span
+              title={
+                onSurface.games
+                  ? `${onSurface.games} ${surface.toLowerCase()} matches`
+                  : `No ${surface.toLowerCase()} matches — starts at 1,500`
+              }
+            >
+              <b className="num">{Math.round(onSurface.rating)}</b> on {surface.toLowerCase()}
+              {!onSurface.games && '*'}
+            </span>
+            <span>
+              <b className="num">{num(rating.games)}</b> matches
+            </span>
+          </>
+        ) : (
+          <span className="plate__unrated">Unrated — no matches in the archive</span>
         )}
       </span>
 

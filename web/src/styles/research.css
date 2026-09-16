@@ -323,3 +323,159 @@
     margin-inline: 0;
   }
 }
+
+/* ==========================================================================
+   The two-report series
+   ========================================================================== */
+
+.series {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr));
+  gap: 0.8rem;
+  padding-top: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+.series__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.1rem 1.25rem;
+  text-align: left;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--line);
+  background: var(--surface-1);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.series__item:hover:not([aria-current]) {
+  border-color: var(--ball);
+  transform: translateY(-2px);
+}
+
+.series__item[aria-current] {
+  cursor: default;
+  background: var(--surface-2);
+  border-color: var(--line-strong);
+  box-shadow: inset 3px 0 0 var(--ball);
+}
+
+.series__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.series__num {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ball-ink);
+}
+
+.series__state {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  color: var(--ink-3);
+}
+
+.series__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 1.75rem);
+  line-height: 1.05;
+  color: var(--ink-1);
+}
+
+.series__blurb {
+  max-width: 52ch;
+  font-size: 0.84rem;
+  color: var(--ink-2);
+}
+
+.series__stat {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.5rem;
+  margin-top: 0.35rem;
+  font-size: 0.74rem;
+  color: var(--ink-3);
+}
+
+.series__stat b {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--ink-1);
+}
+
+/* ==========================================================================
+   Report 2 extras
+   ========================================================================== */
+
+.rsection__sub {
+  margin: 2rem 0 0.6rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink-1);
+}
+
+.compare {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr));
+  gap: 0.7rem;
+  margin: 1.8rem 0;
+}
+
+.compare__tile {
+  padding: 1rem 1.1rem;
+  border-radius: var(--r-md);
+  border: 1px solid var(--line);
+  background: var(--surface-1);
+}
+
+.rsection .compare__tile p {
+  margin: 0;
+  max-width: none;
+}
+
+.rsection .compare__label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.rsection .compare__values {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-top: 0.35rem;
+}
+
+.compare__from {
+  font-size: 0.95rem;
+  color: var(--ink-3);
+}
+
+.compare__arrow {
+  color: var(--ink-3);
+}
+
+.compare__to {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--ink-1);
+}
+
+.rsection .compare__note {
+  margin-top: 0.3rem;
+  font-size: 0.72rem;
+  color: var(--ink-3);
+}

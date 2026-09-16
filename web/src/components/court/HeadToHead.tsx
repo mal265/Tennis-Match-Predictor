@@ -10,8 +10,7 @@ export default function HeadToHead({ a, b }: { a: Player; b: Player }) {
         <h3 className="panel__title">Head to head</h3>
         <p className="panel__empty">
           <strong>{surname(a.name)}</strong> and <strong>{surname(b.name)}</strong> never met in the
-          2000–2024 archive. The model has no rivalry to draw on — and never did: head-to-head is
-          not one of its four inputs.
+          2000–2024 archive, so the model reads their head-to-head as level: an edge of zero.
         </p>
       </section>
     )
@@ -41,6 +40,15 @@ export default function HeadToHead({ a, b }: { a: Player; b: Player }) {
         ) : (
           <>Dead level after {total} meetings</>
         )}
+      </p>
+
+      <p className="h2h__model">
+        One of the model's five inputs: a{' '}
+        <strong className="num">
+          {wins - losses > 0 ? '+' : wins - losses < 0 ? '−' : '±'}
+          {Math.abs(wins - losses)}
+        </strong>{' '}
+        edge for {surname(a.name)}.
       </p>
 
       <div className="h2h__bar" role="img" aria-label={`${a.name} ${wins}, ${b.name} ${losses}`}>

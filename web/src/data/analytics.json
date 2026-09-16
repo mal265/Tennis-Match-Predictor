@@ -521,37 +521,37 @@
  },
  "rankGap": [
   {
-   "label": "0\u20133",
+   "label": "0–3",
    "matches": 641,
    "baseline": 0.5039,
    "model": 0.5273
   },
   {
-   "label": "4\u20138",
+   "label": "4–8",
    "matches": 1022,
    "baseline": 0.5577,
    "model": 0.5646
   },
   {
-   "label": "9\u201315",
+   "label": "9–15",
    "matches": 1360,
    "baseline": 0.5728,
    "model": 0.5919
   },
   {
-   "label": "16\u201330",
+   "label": "16–30",
    "matches": 2656,
    "baseline": 0.6058,
    "model": 0.6088
   },
   {
-   "label": "31\u201360",
+   "label": "31–60",
    "matches": 3567,
    "baseline": 0.6283,
    "model": 0.6319
   },
   {
-   "label": "61\u2013120",
+   "label": "61–120",
    "matches": 2952,
    "baseline": 0.6772,
    "model": 0.6778

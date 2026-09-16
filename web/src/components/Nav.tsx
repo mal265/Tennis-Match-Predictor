@@ -1,3 +1,4 @@
+import type { CSSProperties } from 'react'
 import type { View } from '../App'
 import type { Theme } from '../lib/hooks'
 import { MoonIcon, SunIcon } from './Icons'
@@ -9,7 +10,15 @@ interface Props {
   onToggleTheme: () => void
 }
 
+const TABS: { view: View; label: string }[] = [
+  { view: 'predictor', label: 'Predictor' },
+  { view: 'report1', label: 'Report 1' },
+  { view: 'report2', label: 'Report 2' },
+]
+
 export default function Nav({ view, onNavigate, theme, onToggleTheme }: Props) {
+  const index = Math.max(0, TABS.findIndex((tab) => tab.view === view))
+
   return (
     <header className="nav">
       <div className="page nav__inner">
@@ -20,26 +29,26 @@ export default function Nav({ view, onNavigate, theme, onToggleTheme }: Props) {
           </span>
         </button>
 
-        <nav className="nav__tabs" aria-label="Sections">
+        <nav
+          className="nav__tabs"
+          aria-label="Sections"
+          style={{ '--tabs': TABS.length } as CSSProperties}
+        >
           <span
             className="nav__thumb"
-            style={{ transform: `translateX(${view === 'predictor' ? 0 : 100}%)` }}
+            style={{ transform: `translateX(${index * 100}%)` }}
             aria-hidden="true"
           />
-          <button
-            className="nav__tab"
-            aria-current={view === 'predictor'}
-            onClick={() => onNavigate('predictor')}
-          >
-            Predictor
-          </button>
-          <button
-            className="nav__tab"
-            aria-current={view === 'research'}
-            onClick={() => onNavigate('research')}
-          >
-            Research
-          </button>
+          {TABS.map((tab) => (
+            <button
+              key={tab.view}
+              className="nav__tab"
+              aria-current={view === tab.view}
+              onClick={() => onNavigate(tab.view)}
+            >
+              {tab.label}
+            </button>
+          ))}
         </nav>
 
         <button

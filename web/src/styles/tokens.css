@@ -44,6 +44,7 @@
   --series-2: #d95926; /* clay        */
   --series-3: #199e70; /* grass       */
   --series-4: #c98500; /* carpet      */
+  --series-5: #d55181;
   --series-1-soft: rgba(57, 135, 229, 0.18);
   --series-2-soft: rgba(217, 89, 38, 0.18);
   --series-3-soft: rgba(25, 158, 112, 0.18);
@@ -113,6 +114,7 @@
   --series-2: #eb6834;
   --series-3: #1baf7a;
   --series-4: #eda100;
+  --series-5: #e87ba4;
   --series-1-soft: rgba(42, 120, 214, 0.16);
   --series-2-soft: rgba(235, 104, 52, 0.16);
   --series-3-soft: rgba(27, 175, 122, 0.16);

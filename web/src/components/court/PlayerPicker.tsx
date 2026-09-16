@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
-import { num, pct } from '../../lib/format'
+import { modelInfo } from '../../lib/elo-model'
+import { monthYear, num, pct } from '../../lib/format'
 import { CountryChip } from '../Icons'
 import type { Player } from '../../lib/types'
 
@@ -71,7 +72,8 @@ export default function PlayerPicker({
                     <CountryChip code={player.country} /> {player.name}
                   </span>
                   <span className="pcard__meta num">
-                    {num(player.points)} pts · {player.age}y · {player.height}cm
+                    {player.rating.rated ? `Elo ${Math.round(player.rating.elo)}` : 'Unrated'} ·{' '}
+                    {num(player.points)} pts
                   </span>
                   <span className="pcard__record">
                     {player.career ? (
@@ -91,8 +93,8 @@ export default function PlayerPicker({
         </div>
 
         <p className="picker__foot">
-          Rankings, points, age and height are the model's four inputs. Career records come from the{' '}
-          {num(71463)} archived matches.
+          The model reads Elo ratings, head-to-head, rest and experience. Ratings and career records
+          come from {num(71463)} archived matches up to {monthYear(modelInfo.asOf)}.
         </p>
       </div>
     </div>

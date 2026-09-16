@@ -442,3 +442,141 @@
     display: none;
   }
 }
+
+/* ==========================================================================
+   Report 2 figures
+   ========================================================================== */
+
+.legend__mark {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 0.4rem;
+  vertical-align: -1px;
+}
+
+.ax--strong {
+  font-weight: 700;
+  fill: var(--ink-1);
+}
+
+.ladder-dot {
+  transition: cx 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ladder-whisker {
+  transition: opacity 0.6s ease 0.25s;
+}
+
+.traj-line {
+  transition: stroke-dashoffset 1.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* a surface-coloured halo keeps end labels legible where they cross lines */
+.traj-label {
+  font-family: var(--font-ui);
+  font-size: 11.5px;
+  font-weight: 600;
+  fill: var(--ink-2);
+  paint-order: stroke;
+  stroke: var(--surface-1);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+
+.elo-boards {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) repeat(3, minmax(0, 1fr));
+  gap: clamp(0.8rem, 2vw, 1.4rem);
+}
+
+.elo-board {
+  min-width: 0;
+}
+
+.elo-board__title {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.elo-board ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.elo-board li {
+  display: grid;
+  grid-template-columns: 16px minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.84rem;
+}
+
+.elo-board__rank {
+  font-size: 0.7rem;
+  color: var(--ink-3);
+}
+
+.elo-board__name {
+  min-width: 0;
+  color: var(--ink-1);
+}
+
+.elo-board__name em {
+  display: block;
+  font-style: normal;
+  font-size: 0.68rem;
+  color: var(--ink-3);
+}
+
+.elo-board b {
+  font-weight: 700;
+}
+
+.elo-board--peak li:first-child b {
+  color: var(--ball-ink);
+}
+
+.worth .hbars__row {
+  grid-template-columns: minmax(120px, 160px) 1fr 52px 92px;
+}
+
+.worth__dir {
+  font-size: 0.72rem;
+  text-align: right;
+  color: var(--ink-3);
+}
+
+@media (max-width: 860px) {
+  .elo-boards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .elo-boards {
+    grid-template-columns: 1fr;
+  }
+
+  .worth .hbars__row {
+    grid-template-columns: 1fr 52px;
+  }
+
+  .worth__dir {
+    display: none;
+  }
+}
+
+.ax.ax--tiny {
+  font-size: 9.5px;
+}

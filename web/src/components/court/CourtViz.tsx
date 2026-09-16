@@ -4,6 +4,8 @@
  * each player holds *is* their win probability.
  */
 
+import type { RatedSurface } from '../../lib/types'
+
 // Regulation dimensions in centimetres, so the geometry is real, not eyeballed.
 const M_X = 220
 const M_Y = 190
@@ -32,11 +34,12 @@ interface Props {
   /** Player A's win probability, 0–1. */
   probability: number
   phase: Phase
+  surface: RatedSurface
   labelA: string
   labelB: string
 }
 
-export default function CourtViz({ probability, phase, labelA, labelB }: Props) {
+export default function CourtViz({ probability, phase, surface, labelA, labelB }: Props) {
   const settled = phase === 'result'
   const split = settled ? probability : 0.5
   const divider = X0 + LEN * split
@@ -48,15 +51,19 @@ export default function CourtViz({ probability, phase, labelA, labelB }: Props) 
                  Q ${NET_X - 100} 260 ${divider} ${MID_Y}`
 
   return (
-    <div className={`courtviz courtviz--${phase}`} data-leads={aLeads ? 'a' : 'b'}>
+    <div
+      className={`courtviz courtviz--${phase}`}
+      data-leads={aLeads ? 'a' : 'b'}
+      data-surface={surface}
+    >
       <svg
         viewBox={`0 0 ${VB_W} ${VB_H}`}
         className="courtviz__svg"
         role="img"
         aria-label={
           settled
-            ? `Court split: ${labelA} holds ${(probability * 100).toFixed(1)} percent, ${labelB} holds ${((1 - probability) * 100).toFixed(1)} percent.`
-            : `An empty court awaiting a prediction between ${labelA} and ${labelB}.`
+            ? `${surface} court split: ${labelA} holds ${(probability * 100).toFixed(1)} percent, ${labelB} holds ${((1 - probability) * 100).toFixed(1)} percent.`
+            : `An empty ${surface.toLowerCase()} court awaiting a prediction between ${labelA} and ${labelB}.`
         }
       >
         <defs>
@@ -84,8 +91,8 @@ export default function CourtViz({ probability, phase, labelA, labelB }: Props) 
 
         <g clipPath="url(#apron)">
           {/* run-off area and the playing surface */}
-          <rect x="0" y="0" width={VB_W} height={VB_H} fill="var(--court-apron)" />
-          <rect x={X0} y={Y0} width={LEN} height={WID} fill="var(--court-floor)" />
+          <rect className="courtviz__apron" x="0" y="0" width={VB_W} height={VB_H} />
+          <rect className="courtviz__floor" x={X0} y={Y0} width={LEN} height={WID} />
 
           {/* territory — the data layer */}
           <rect
@@ -139,6 +146,10 @@ export default function CourtViz({ probability, phase, labelA, labelB }: Props) 
           <circle cx={NET_X} cy={Y0 - 90} r="20" fill="var(--ink-1)" fillOpacity="0.34" />
           <circle cx={NET_X} cy={Y1 + 90} r="20" fill="var(--ink-1)" fillOpacity="0.34" />
         </g>
+
+        <text x={X0 + 10} y={Y1 + 150} className="courtviz__surface-label">
+          {surface.toUpperCase()} COURT
+        </text>
 
         {/* the split line: where the model draws the match */}
         <g

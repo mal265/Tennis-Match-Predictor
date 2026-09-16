@@ -1182,3 +1182,282 @@
     text-align: left;
   }
 }
+
+/* ==========================================================================
+   Report 2: match conditions, a court in its surface's colours, rating detail
+   ========================================================================== */
+
+.conditions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem 1.6rem;
+  margin-bottom: clamp(0.9rem, 2vw, 1.2rem);
+  padding: 0.7rem 0.95rem;
+  border-radius: var(--r-md);
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+}
+
+.conditions__group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem 1rem;
+}
+
+.conditions__label {
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.seg {
+  display: inline-flex;
+  padding: 3px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface-1);
+}
+
+.seg__option {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+  padding: 0.34rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.seg__option:hover {
+  color: var(--ink-1);
+}
+
+.seg__option:has(input:checked) {
+  background: var(--ball);
+  color: var(--on-ball);
+}
+
+.seg__option:has(input:focus-visible) {
+  outline: 2px solid var(--ball);
+  outline-offset: 2px;
+}
+
+.seg__option:has(input:disabled) {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.seg__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--surface-1);
+}
+
+.rest {
+  display: grid;
+  grid-template-columns: minmax(58px, auto) minmax(84px, 130px) 30px;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--ink-2);
+}
+
+.rest__name {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rest input[type='range'] {
+  width: 100%;
+  accent-color: var(--rest-color);
+  cursor: pointer;
+}
+
+.rest input[type='range']:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.rest--a {
+  --rest-color: var(--series-1);
+}
+
+.rest--b {
+  --rest-color: var(--series-2);
+}
+
+.rest__value {
+  text-align: right;
+  font-weight: 600;
+  color: var(--ink-1);
+}
+
+/* muted on purpose: the surface sets the scene, the territory carries the data */
+.courtviz__apron {
+  fill: var(--court-apron);
+  transition: fill 0.6s ease;
+}
+
+.courtviz__floor {
+  fill: var(--court-floor);
+  transition: fill 0.6s ease;
+}
+
+.courtviz {
+  transition: background-color 0.6s ease;
+}
+
+.courtviz[data-surface='Hard'] {
+  --court-apron: #0f1d26;
+  --court-floor: #1a3346;
+}
+
+.courtviz[data-surface='Clay'] {
+  --court-apron: #1e1510;
+  --court-floor: #3a261b;
+}
+
+.courtviz[data-surface='Grass'] {
+  --court-apron: #0f1e14;
+  --court-floor: #1c3a25;
+}
+
+:root[data-theme='light'] .courtviz[data-surface='Hard'] {
+  --court-apron: #a9b8c2;
+  --court-floor: #8ea3b2;
+}
+
+:root[data-theme='light'] .courtviz[data-surface='Clay'] {
+  --court-apron: #c8b2a3;
+  --court-floor: #b28e77;
+}
+
+:root[data-theme='light'] .courtviz[data-surface='Grass'] {
+  --court-apron: #afc0a9;
+  --court-floor: #92ac8b;
+}
+
+.courtviz__surface-label {
+  font-family: var(--font-ui);
+  font-size: 54px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  fill: var(--court-line);
+  opacity: 0.4;
+}
+
+.plate__unrated {
+  font-style: italic;
+}
+
+.tape__legend-edge {
+  margin-left: auto;
+}
+
+.h2h__model {
+  margin-top: 0.4rem;
+  text-align: center;
+  font-size: 0.76rem;
+  color: var(--ink-3);
+}
+
+.h2h__model strong {
+  color: var(--ink-1);
+}
+
+.career__stat-hint {
+  font-style: normal;
+  color: var(--ink-3);
+}
+
+.career__surface {
+  grid-template-columns: 70px 1fr 58px 58px;
+}
+
+.career__surface--head {
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.career__surface--head > span:nth-child(3),
+.career__surface--head > span:nth-child(4) {
+  text-align: right;
+}
+
+.career__surface--head .kicker {
+  margin: 0;
+}
+
+.career__surface-elo {
+  text-align: right;
+  font-weight: 600;
+}
+
+.career__surface-elo em {
+  display: block;
+  font-style: normal;
+  font-size: 0.64rem;
+  font-weight: 400;
+  color: var(--ink-3);
+}
+
+.career__surface.is-active .career__surface-name {
+  color: var(--ink-1);
+  font-weight: 600;
+}
+
+.career__surface.is-active .career__surface-elo {
+  color: var(--ball-ink);
+}
+
+.handoff__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+@media (max-width: 760px) {
+  .conditions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .conditions__group {
+    justify-content: space-between;
+  }
+
+  .conditions__group--rest {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .rest {
+    grid-template-columns: 84px 1fr 34px;
+  }
+
+  .career__surface {
+    grid-template-columns: 58px 1fr 50px 50px;
+  }
+}
+
+@media (max-width: 420px) {
+  .career__surface-val em,
+  .career__surface-elo em {
+    display: none;
+  }
+}

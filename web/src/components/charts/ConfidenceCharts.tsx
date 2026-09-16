@@ -221,7 +221,7 @@ export function ResponseCurve({ number }: { number: number }) {
     <Figure
       number={number}
       title="The curve the network actually learned"
-      subtitle="Win probability as the ranking gap widens, with points, age and height held level. Sampled live from the same weights the predictor runs on."
+      subtitle="Win probability as the ranking gap widens, with points, age and height held level. Sampled live from Report 1's network, running in your browser."
       source="A 100-place ranking advantage is worth far less than intuition suggests, and the curve flattens hard past about 150 places."
       table={{
         columns: ['Ranking gap (places better)', 'Win probability'],

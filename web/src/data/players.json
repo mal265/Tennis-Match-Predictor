@@ -175,6 +175,33 @@
      "won": true
     }
    }
+  },
+  "rating": {
+   "rated": true,
+   "elo": 2261.5873,
+   "games": 303,
+   "peak": {
+    "rating": 2298.8,
+    "date": "2024-04-08"
+   },
+   "lastMatch": {
+    "date": "2024-04-22",
+    "event": "Madrid Masters"
+   },
+   "surfaces": {
+    "Hard": {
+     "rating": 2282.0334,
+     "games": 211
+    },
+    "Clay": {
+     "rating": 1981.4086,
+     "games": 72
+    },
+    "Grass": {
+     "rating": 1824.9205,
+     "games": 20
+    }
+   }
   }
  },
  {
@@ -353,6 +380,33 @@
      "won": true
     }
    }
+  },
+  "rating": {
+   "rated": true,
+   "elo": 2176.8487,
+   "games": 221,
+   "peak": {
+    "rating": 2308.3,
+    "date": "2023-08-07"
+   },
+   "lastMatch": {
+    "date": "2024-04-22",
+    "event": "Madrid Masters"
+   },
+   "surfaces": {
+    "Hard": {
+     "rating": 2148.5401,
+     "games": 117
+    },
+    "Clay": {
+     "rating": 2092.3575,
+     "games": 86
+    },
+    "Grass": {
+     "rating": 2044.9919,
+     "games": 18
+    }
+   }
   }
  },
  {
@@ -517,6 +571,33 @@
      "round": "SF",
      "score": "6-3 6-4 6-0",
      "won": false
+    }
+   }
+  },
+  "rating": {
+   "rated": true,
+   "elo": 2086.9084,
+   "games": 609,
+   "peak": {
+    "rating": 2213.8,
+    "date": "2022-01-03"
+   },
+   "lastMatch": {
+    "date": "2024-05-06",
+    "event": "Rome Masters"
+   },
+   "surfaces": {
+    "Hard": {
+     "rating": 2037.7742,
+     "games": 368
+    },
+    "Clay": {
+     "rating": 2052.5517,
+     "games": 190
+    },
+    "Grass": {
+     "rating": 1783.1272,
+     "games": 51
     }
    }
   }
@@ -709,6 +790,33 @@
      "won": true
     }
    }
+  },
+  "rating": {
+   "rated": true,
+   "elo": 1933.8169,
+   "games": 336,
+   "peak": {
+    "rating": 2102.3,
+    "date": "2022-10-31"
+   },
+   "lastMatch": {
+    "date": "2024-05-06",
+    "event": "Rome Masters"
+   },
+   "surfaces": {
+    "Hard": {
+     "rating": 1841.7776,
+     "games": 224
+    },
+    "Clay": {
+     "rating": 1855.7359,
+     "games": 78
+    },
+    "Grass": {
+     "rating": 1736.3983,
+     "games": 34
+    }
+   }
   }
  },
  {
@@ -887,6 +995,33 @@
      "won": false
     }
    }
+  },
+  "rating": {
+   "rated": true,
+   "elo": 2264.9343,
+   "games": 1332,
+   "peak": {
+    "rating": 2440.7,
+    "date": "2016-02-22"
+   },
+   "lastMatch": {
+    "date": "2024-05-20",
+    "event": "Geneva"
+   },
+   "surfaces": {
+    "Hard": {
+     "rating": 2264.0928,
+     "games": 838
+    },
+    "Clay": {
+     "rating": 2149.5422,
+     "games": 348
+    },
+    "Grass": {
+     "rating": 2211.032,
+     "games": 133
+    }
+   }
   }
  },
  {
@@ -1051,6 +1186,33 @@
      "round": "SF",
      "score": "6-4 6-2",
      "won": true
+    }
+   }
+  },
+  "rating": {
+   "rated": true,
+   "elo": 2152.0176,
+   "games": 498,
+   "peak": {
+    "rating": 2237.3,
+    "date": "2022-01-17"
+   },
+   "lastMatch": {
+    "date": "2024-05-06",
+    "event": "Rome Masters"
+   },
+   "surfaces": {
+    "Hard": {
+     "rating": 2155.8141,
+     "games": 375
+    },
+    "Clay": {
+     "rating": 1912.094,
+     "games": 63
+    },
+    "Grass": {
+     "rating": 1872.3566,
+     "games": 60
     }
    }
   }
@@ -1229,6 +1391,33 @@
      "round": "F",
      "score": "6-4 6-4",
      "won": true
+    }
+   }
+  },
+  "rating": {
+   "rated": true,
+   "elo": 2055.9672,
+   "games": 375,
+   "peak": {
+    "rating": 2085.8,
+    "date": "2024-04-15"
+   },
+   "lastMatch": {
+    "date": "2024-05-06",
+    "event": "Rome Masters"
+   },
+   "surfaces": {
+    "Hard": {
+     "rating": 2029.1835,
+     "games": 277
+    },
+    "Clay": {
+     "rating": 1859.5654,
+     "games": 57
+    },
+    "Grass": {
+     "rating": 1767.3421,
+     "games": 41
     }
    }
   }
@@ -1421,6 +1610,33 @@
      "won": false
     }
    }
+  },
+  "rating": {
+   "rated": true,
+   "elo": 1978.8959,
+   "games": 430,
+   "peak": {
+    "rating": 2084.2,
+    "date": "2023-04-10"
+   },
+   "lastMatch": {
+    "date": "2024-05-20",
+    "event": "Geneva"
+   },
+   "surfaces": {
+    "Hard": {
+     "rating": 1953.3614,
+     "games": 305
+    },
+    "Clay": {
+     "rating": 1885.9395,
+     "games": 82
+    },
+    "Grass": {
+     "rating": 1671.8545,
+     "games": 43
+    }
+   }
   }
  },
  {
@@ -1520,6 +1736,33 @@
      "round": "SF",
      "score": "1-6 6-1 7-6(4)",
      "won": false
+    }
+   }
+  },
+  "rating": {
+   "rated": true,
+   "elo": 1851.7553,
+   "games": 44,
+   "peak": {
+    "rating": 1866.7,
+    "date": "2024-05-20"
+   },
+   "lastMatch": {
+    "date": "2024-05-20",
+    "event": "Geneva"
+   },
+   "surfaces": {
+    "Hard": {
+     "rating": 1689.4208,
+     "games": 22
+    },
+    "Clay": {
+     "rating": 1758.2163,
+     "games": 22
+    },
+    "Grass": {
+     "rating": 1500.0,
+     "games": 0
     }
    }
   }
@@ -1674,6 +1917,33 @@
      "round": "QF",
      "score": "6-7(7) 6-4 6-4",
      "won": false
+    }
+   }
+  },
+  "rating": {
+   "rated": true,
+   "elo": 1916.0988,
+   "games": 82,
+   "peak": {
+    "rating": 1994.9,
+    "date": "2023-10-16"
+   },
+   "lastMatch": {
+    "date": "2024-05-20",
+    "event": "Geneva"
+   },
+   "surfaces": {
+    "Hard": {
+     "rating": 1884.5278,
+     "games": 59
+    },
+    "Clay": {
+     "rating": 1652.2116,
+     "games": 18
+    },
+    "Grass": {
+     "rating": 1434.995,
+     "games": 5
     }
    }
   }
@@ -1842,6 +2112,33 @@
      "won": false
     }
    }
+  },
+  "rating": {
+   "rated": true,
+   "elo": 1892.4242,
+   "games": 281,
+   "peak": {
+    "rating": 1938.5,
+    "date": "2024-02-26"
+   },
+   "lastMatch": {
+    "date": "2024-05-20",
+    "event": "Lyon"
+   },
+   "surfaces": {
+    "Hard": {
+     "rating": 1846.0636,
+     "games": 187
+    },
+    "Clay": {
+     "rating": 1647.1269,
+     "games": 50
+    },
+    "Grass": {
+     "rating": 1873.6098,
+     "games": 44
+    }
+   }
   }
  },
  {
@@ -1917,6 +2214,33 @@
      "round": "R64",
      "score": "4-6 6-3 6-4",
      "won": false
+    }
+   }
+  },
+  "rating": {
+   "rated": true,
+   "elo": 1864.0867,
+   "games": 20,
+   "peak": {
+    "rating": 1986.7,
+    "date": "2024-02-19"
+   },
+   "lastMatch": {
+    "date": "2024-05-06",
+    "event": "Rome Masters"
+   },
+   "surfaces": {
+    "Hard": {
+     "rating": 1856.7385,
+     "games": 16
+    },
+    "Clay": {
+     "rating": 1600.9007,
+     "games": 4
+    },
+    "Grass": {
+     "rating": 1500.0,
+     "games": 0
     }
    }
   }
@@ -2095,6 +2419,33 @@
      "round": "SF",
      "score": "6-3 7-5",
      "won": false
+    }
+   }
+  },
+  "rating": {
+   "rated": true,
+   "elo": 1748.7639,
+   "games": 198,
+   "peak": {
+    "rating": 1950.0,
+    "date": "2022-10-31"
+   },
+   "lastMatch": {
+    "date": "2024-05-06",
+    "event": "Rome Masters"
+   },
+   "surfaces": {
+    "Hard": {
+     "rating": 1700.7567,
+     "games": 103
+    },
+    "Clay": {
+     "rating": 1806.3408,
+     "games": 82
+    },
+    "Grass": {
+     "rating": 1570.2901,
+     "games": 13
     }
    }
   }
@@ -2287,10 +2638,37 @@
      "won": true
     }
    }
+  },
+  "rating": {
+   "rated": true,
+   "elo": 2047.2781,
+   "games": 361,
+   "peak": {
+    "rating": 2100.4,
+    "date": "2022-05-23"
+   },
+   "lastMatch": {
+    "date": "2024-05-20",
+    "event": "Geneva"
+   },
+   "surfaces": {
+    "Hard": {
+     "rating": 1914.405,
+     "games": 163
+    },
+    "Clay": {
+     "rating": 2050.609,
+     "games": 188
+    },
+    "Grass": {
+     "rating": 1495.5334,
+     "games": 10
+    }
+   }
   }
  },
  {
-  "name": "Rafael Jódar",
+  "name": "Rubén Jódar",
   "rank": 15,
   "points": 2243,
   "age": 21,
@@ -2298,6 +2676,27 @@
   "country": "ESP",
   "id": "rubenjodar",
   "career": null,
-  "h2h": {}
+  "h2h": {},
+  "rating": {
+   "rated": false,
+   "elo": 1500.0,
+   "games": 0,
+   "peak": null,
+   "lastMatch": null,
+   "surfaces": {
+    "Hard": {
+     "rating": 1500.0,
+     "games": 0
+    },
+    "Clay": {
+     "rating": 1500.0,
+     "games": 0
+    },
+    "Grass": {
+     "rating": 1500.0,
+     "games": 0
+    }
+   }
+  }
  }
 ]

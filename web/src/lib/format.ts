@@ -24,3 +24,15 @@ export const surname = (name: string) => {
   const parts = name.split(' ')
   return parts.length > 1 ? parts.slice(1).join(' ') : name
 }
+
+/** Accuracy lift in percentage points, signed: 0.0129 -> "+1.29". */
+export const liftPts = (v: number, digits = 2) =>
+  `${v >= 0 ? '+' : '−'}${Math.abs(v * 100).toFixed(digits)}`
+
+/** "2024-05-20" -> "May 2024". */
+export const monthYear = (iso: string) =>
+  new Date(`${iso}T00:00:00Z`).toLocaleDateString('en-GB', {
+    month: 'short',
+    year: 'numeric',
+    timeZone: 'UTC',
+  })
