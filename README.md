@@ -1,4 +1,4 @@
-# CourtVision — Predicting ATP Match Outcomes with Machine Learning
+# TennisMatchPredictor — Predicting ATP Match Outcomes with Machine Learning
 
 **Author: Roman Belchikov**
 
